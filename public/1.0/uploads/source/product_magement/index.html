@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jewelry Product Management</title>
+    <style>
+
+        body, html {
+    font-size: 15px !important;
+}
+        body {
+    background: #232426; 
+    font-family: 'Test Sohne', sans-serif;
+    margin: 0;
+}
+* {
+    font-family: Inter, sans-serif !important;
+}
+        section {
+    height: auto;
+    min-height: auto;
+}p, h1, h2, h3, h4, h5, h6 {
+    padding: 0;
+    margin: 0;
+}
+#banner{
+    background: #FFFAF3;
+}
+#specific{
+    background:#232426;
+}
+#banner .section-content,#specific .section-content {
+    width: 100%;
+    /* height: 100vh; */
+    display: block;
+    justify-content: space-between;
+    align-items: center;
+    gap: 5vw;
+    /* padding: 7vw 10vw; */
+}
+#banner .section-content .info-container ,#specific .section-content .info-container{
+    /* position: absolute; */
+    padding: 4vw;
+    text-align: center;
+}
+#banner .img-container, #specific .img-container{
+    text-align: center;
+}
+#banner .img-container img{
+    width:100%;
+}
+.info-container .pos-module {
+    width: 60px;
+}img {
+    width: 100%;
+}.info-container hr {
+    margin: 1vw auto;
+}.r-gradient-color {
+    background: -webkit-linear-gradient(0deg, #FC8A5B, #F75851, #F06C82);
+}hr {
+    height: .3vw;
+    width: 10vw;
+    margin: 0 0 2vw;
+    background: black;
+    border: none;
+    min-width: 200px;
+    min-height: 5px;
+}
+#banner-ring{
+    margin-bottom: 1.5vw;
+}
+#banner .info-container h2, #specific .info-container h2{
+    font-size: 3.5vw;
+    font-weight: 600;
+}
+#specific .info-container h2{
+    font-size: 2.5vw;
+}
+#specific .info-container h2 span{
+    font-size: 3.5vw;
+}
+#specific .info-container h2,#specific .info-container p{
+    color:#fff;
+}
+#specific img{
+    width: 50vw;
+}
+#banner .info-container p, #specific .info-container p{
+    width: 50vw;
+    font-size: .73vw;
+    font-weight: 200;
+    line-height: 2;
+    text-align: center;
+    margin: 0 auto;
+}
+
+#banner .info-container p, #specific .info-container p{
+    font-size: .73vw;
+    font-weight: 200;
+    line-height: 2;
+}  
+ 
+ 
+                        @media (max-width:1440px) { 
+                            #banner .info-container p {
+                                font-size: .807vw;
+                                font-weight: 200;
+                                line-height: 1.8;
+                            }   
+                        } 
+
+                        #banner .info-container p {
+    font-size: 0.83vw;
+    font-weight: 200;
+    letter-spacing: 0.0625vw;
+    line-height: 1.5;
+    width: 85%;
+    width: 60vw;
+    margin: 0 auto;
+    margin-bottom: 1.5625vw;
+    
+}
+section {
+    height: auto;
+    min-height: auto;
+}
+.white-section {
+    background: #FFFAF3;
+    color: #232426;
+}
+#m_product,#m_brand {
+    padding: 7vw 10vw 0 10vw;
+}
+#m_product{
+    padding-top:10vw;
+}
+#m_brand{
+    padding-bottom:10vw;
+}
+.section-content, #m_product .section-content, #m_brand .section-content{
+    width: 100%;
+    min-height: 100%;
+    min-height: auto;
+    display: flex;
+    justify-content: space-between;
+    justify-content: center;
+    align-items: center;
+    gap: 1%;
+}
+#m_product .img-container, #m_brand .img-container {
+    min-width: 30vw;
+}
+#monitors .img-container{
+    width: 65vw;
+}
+#m_product .info-container, #m_brand .info-container {
+    width: 28vw;
+    margin-left: 3vw;
+}
+#m_product .info-container h2, #m_brand .info-container h2 {
+    font-size: 2.4vw;
+    font-weight: 400;
+    line-height: 1.2; 
+}
+hr {
+    height: .3vw;
+    width: 10vw;
+    margin: 0 0 2vw;
+    background: black;
+    border: none;
+    min-width: 200px;
+    min-height: 5px;
+}
+.info-container hr {
+    margin: 1.5vw auto;
+}
+#m_product .info-container p,#m_brand .info-container p{
+    font-size: 1.06vw;
+    font-size: .9vw;
+    font-weight: 300;
+    line-height: 1.5;
+    width: 93%; 
+    text-align: justify;
+}
+
+.r-gradient-color {
+    background: -webkit-linear-gradient(0deg, #FC8A5B, #F75851, #F06C82);
+}
+.info-container a {
+    display: inline-block;
+    color: #fff;
+    font-size: .95vw;
+    font-weight: 300;
+    letter-spacing: 1.2;
+    text-decoration: none;
+    padding: .8vw 2.5vw .9vw;
+}
+
+#m_product .info-container h2 span, #m_brand .info-container h2 span{
+    font-size: 1.25vw;
+    font-weight: 600;
+}
+#m_product hr,#m_brand hr{
+    margin:1vw 0 2vw 0;
+    width: 8vw;
+    min-width: 150px;
+}
+#marketing {
+    background: linear-gradient(90deg, #FD8D5C, #F85751, #EF718D);
+    padding: 3.625vw 3.8vw;
+}
+.white-section {
+    background: #FFFAF3;
+    color: #232426;
+}
+#marketing .section-content {
+    max-width: 62.5vw;
+    margin: auto;
+    width: 100%;
+    min-height: 100%;
+} 
+#marketing .section-content .row {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    /* gap: 2%;
+    row-gap: 1.71875vw; */
+}
+#marketing .info-container {
+    width: 23%;
+    padding: 0 1%;
+}
+#marketing .img-container img {
+    width: auto;
+    /* height: 5.416vw;
+    margin-bottom: 1.25vw; */
+}
+#marketing .info-container h3 {
+    /* font-size: 0.83vw;
+    font-weight: 500;
+    line-height: 1.2;
+    margin-bottom: 0.83vw; */
+
+    color: #fff;
+    font-weight: 600;
+    font-size: 1.06rem;
+    font-size: 16px;
+    letter-spacing: 1.2;
+    margin: 1.6vw 0;
+}
+#marketing .info-container p {
+    color: #fff;
+    font-size: 0.72vw;
+    font-weight: 100;
+    letter-spacing: 1.2;
+    line-height: 1.5;
+}
+
+
+    </style>
+</head>
+<body>
+    <section id="banner">
+        <div class="section-content">
+            <div class="info-container">
+                <svg width="60" height="60" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <rect width="60" height="60" fill=" "/>
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M19.5915 9.57447C19.5915 4.28664 24.0737 0 29.6028 0C35.1319 0 39.6141 4.28664 39.6141 9.57447C39.6141 14.8623 35.1319 19.1489 29.6028 19.1489C24.0737 19.1489 19.5915 14.8623 19.5915 9.57447ZM29.6028 3.82979C26.2853 3.82979 23.596 6.40177 23.596 9.57447C23.596 12.7472 26.2853 15.3191 29.6028 15.3191C32.9202 15.3191 35.6096 12.7472 35.6096 9.57447C35.6096 6.40177 32.9202 3.82979 29.6028 3.82979Z" fill="#232426"/>
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M27.6005 51.4938V49.691C23.9953 49.3545 20.445 48.1874 18.0286 47.0319L17.9692 47.0035C16.3203 46.2151 13.9816 45.0969 11.6855 43.4L10.9556 44.2007C11.653 45.7333 11.4185 47.5791 10.1937 48.9228C8.49824 50.7829 5.54706 50.9763 3.60207 49.3548C1.65708 47.7333 1.45481 44.9109 3.15029 43.0508C4.37482 41.7073 6.25436 41.2333 7.93676 41.6845L8.94859 40.5744C8.82808 39.972 9.01162 39.3251 9.49921 38.8587C10.2811 38.1109 11.5489 38.1109 12.3308 38.8587C14.7437 41.1663 17.6156 42.5526 19.8195 43.6064C22.2949 44.7901 26.1347 45.9574 29.6028 45.9574C33.0709 45.9574 36.9107 44.7901 39.3861 43.6064C42.055 42.3302 44.4576 41.1704 46.8747 38.8587C47.628 38.1384 48.832 38.1119 49.6184 38.7794L52.4607 41.149C54.0631 40.4823 55.993 40.7066 57.3979 41.8778C59.3429 43.4993 59.5452 46.3217 57.8497 48.1818C56.1542 50.042 53.203 50.2354 51.258 48.6139C49.8532 47.4427 49.3576 45.6451 49.8294 44.036L48.3291 42.7852C45.8904 44.7781 43.4723 45.9344 41.2385 47.0024L41.1769 47.0319C38.7606 48.1874 35.2102 49.3545 31.605 49.691V51.4938C33.1835 52.2109 34.2747 53.7495 34.2747 55.5319C34.2747 57.9996 32.183 60 29.6028 60C27.0225 60 24.9308 57.9996 24.9308 55.5319C24.9308 53.7495 26.0221 52.2109 27.6005 51.4938ZM29.6028 54.8936C29.2342 54.8936 28.9354 55.1794 28.9354 55.5319C28.9354 55.8844 29.2342 56.1702 29.6028 56.1702C29.9714 56.1702 30.2702 55.8844 30.2702 55.5319C30.2702 55.1794 29.9714 54.8936 29.6028 54.8936ZM53.8249 44.8264C53.5827 45.0922 53.6116 45.4954 53.8894 45.727C54.1673 45.9586 54.5889 45.931 54.8311 45.6653C55.0733 45.3995 55.0444 44.9963 54.7666 44.7647C54.4887 44.5331 54.0671 44.5607 53.8249 44.8264ZM7.11057 45.5056C6.83271 45.274 6.41112 45.3016 6.1689 45.5674C5.92669 45.8331 5.95559 46.2363 6.23344 46.4679C6.5113 46.6996 6.9329 46.6719 7.17511 46.4062C7.41732 46.1405 7.38843 45.7373 7.11057 45.5056Z" fill="#232426"/>
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M26.0543 21.4841C25.6746 20.7579 24.8574 20.3396 24.0151 20.4403C18.3866 21.1132 15.0026 22.8661 13.2143 25.6453C11.5788 28.187 11.5808 31.2197 11.5823 33.612L11.5824 33.8298C11.5824 34.5949 11.8694 35.2962 12.1834 35.8514C12.5112 36.431 12.9561 37.0042 13.463 37.5511C14.4784 38.6464 15.8719 39.7744 17.4877 40.7939C20.6986 42.8197 25.0676 44.5909 29.5611 44.6804C34.0613 44.7701 38.4536 43.1692 41.7015 41.1631C43.3337 40.1549 44.7481 39.0014 45.779 37.8248C46.7508 36.7156 47.6231 35.3105 47.6231 33.8298C47.6231 33.4571 47.6328 33.0357 47.643 32.5921C47.6627 31.7351 47.6842 30.7955 47.6416 29.9658C47.5722 28.6171 47.3349 27.1361 46.5495 25.7411C44.9017 22.8143 41.3668 21.0964 35.1632 20.4372C34.3295 20.3486 33.5264 20.7665 33.1513 21.4841L29.6028 28.2714L26.0543 21.4841ZM31.3937 33.4096L36.0957 24.4157C40.8249 25.1056 42.3931 26.4368 43.0237 27.5568C43.4062 28.2363 43.5861 29.0691 43.6419 30.1539C43.6787 30.8703 43.6619 31.5372 43.6433 32.2799C43.6313 32.7546 43.6186 33.2603 43.6186 33.8298C43.6186 33.9448 43.4898 34.4746 42.7096 35.3651C41.9885 36.1881 40.9001 37.0991 39.5289 37.9459C36.7701 39.65 33.1533 40.9214 29.6445 40.8515C26.129 40.7814 22.4889 39.3612 19.693 37.5971C18.3054 36.7216 17.1961 35.8051 16.4595 35.0104C16.0904 34.6123 15.847 34.2792 15.7056 34.0292C15.625 33.8867 15.5961 33.8043 15.587 33.7756C15.5877 31.121 15.6473 29.1717 16.6248 27.6525C17.4203 26.4162 19.0909 25.1238 23.1224 24.4398L27.8119 33.4096C28.1511 34.0583 28.8444 34.4681 29.6028 34.4681C30.3612 34.4681 31.0545 34.0583 31.3937 33.4096Z" fill="#232426"/>
+                    </svg>
+                     
+                <h2 tagname="h2">Jewelry Product Management<br></h2>
+                <hr class="r-gradient-color">
+                <p tagname="p">Build offers a comprehensive suite of modules to simplify product management, covering both individual products and entire brands. The sorting system, tag system for searching and filtering, and jewelry specifications aid in organization. Additionally, an AI content generator automates repetitive tasks, freeing up time for other business tasks. With these modules in place, product management becomes efficient and easy, providing a complete solution for stress-free website product management.</p> 
+                
+            </div>
+            <div class="img-container">
+                <img src="/1.0/uploads/source/product_magement/files/shutterstock_2361518699 1.png" alt="We Increased Traffic &amp; THE BOTTOM-LINE" loading="lazy" href="">
+            </div>
+        </div>
+    </section>
+    <section id="marketing" class="white-section">
+        <div class="section-content">  
+            <div class="row">
+                <div class="info-container">
+                    <div class="img-container">
+                        <img src="/1.0/uploads/source/product_magement/files/Frame 415.png" alt="Promotions" loading="lazy" href="">
+                    </div>
+                    <h3 tagname="h3">Marketplace Connections</h3>
+                    <p tagname="p">Expand your products exposure by connecting your site to the biggest marketplaces, such as Google Shop, Facebook Shop, and more.</p>
+                </div>
+                <div class="info-container">
+                    <div class="img-container">
+                        <img src="/1.0/uploads/source/product_magement/files/Frame 416.png" alt="Popups" loading="lazy" href="">
+                    </div>
+                    <h3 tagname="h3">Fully Customizable Design</h3>
+                    <p tagname="p">Customize every aspect of your website to fit your unique vision. Use simple yet versatile page builders and templates for total creative freedom.</p>
+                </div>
+                <div class="info-container">
+                    <div class="img-container">
+                        <img src="/1.0/uploads/source/product_magement/files/Frame 417.png" alt="Page Funnels" loading="lazy" href="">
+                    </div>
+                    <h3 tagname="h3">Checkout With Financing</h3>
+                    <p tagname="p">Increase sales by offering integrated financing options at the checkout. Build offers financing through Wells Fargo, Affirm, and many others. </p>
+                </div>
+                <div class="info-container">
+                    <div class="img-container">
+                        <img src="/1.0/uploads/source/product_magement/files/Frame 418.png" alt="Blogs" loading="lazy" href="">
+                    </div>
+                    <h3 tagname="h3">Fraud Protection</h3>
+                    <p tagname="p">Sell risk free, knowing that every transaction is covered against fraud. Build fraud protection partners  guarantees your security.</p>
+                </div>
+            </div> 
+        </div>
+    </section>
+    <section id="m_product" class="white-section">
+        <div class="section-content">
+            <div class="img-container">
+                <img src="/1.0/uploads/source/product_magement/files/Group 1107.png" alt="We Increased Traffic &amp; THE BOTTOM-LINE" loading="lazy" href="">
+            </div>
+            <div class="info-container">
+                <h2 tagname="h2"><span tagname="span">Manage Products</span></h2>
+                <hr>
+                <p tagname="p">Build's Manage Products module makes adding/editing products on your website a breeze. Products can be added locally or from automated sources like Larovo or POS. This makes marketing/selling more efficient and convenient. Quick edits to product details, images, prices, SEO, market settings, and variations are possible. Viewing, filtering, searching, sorting, downloading, and printing product information is effortless with the click of a button. This module sets up all necessary product-related steps for efficient website use, with easy management from the back end.</p> 
+            </div>
+        </div>
+    </section>
+    <section id="m_brand" class="white-section">
+        <div class="section-content">
+            <div class="info-container">
+                <h2 tagname="h2"><span tagname="span">Manage Brand</span></h2>
+                <hr>
+                <p tagname="p">The Manage Brand module streamlines brand management by allowing you to set rules for all products in a brand. You can manage multiple brands with just a few clicks. Changes can be applied to the shopping cart, prices, stock, product images, item page policy, content generator settings, button labels, and more, for an entire brand, all at once. This makes brand management faster and more efficient, whether you're adding new brands or managing existing ones. Simply select your desired specifications and apply to all products in the brand.</p> 
+            </div>
+            <div class="img-container">
+                <img src="/1.0/uploads/source/product_magement/files/Group 1108.png" alt="We Increased Traffic &amp; THE BOTTOM-LINE" loading="lazy" href="">
+            </div>
+        </div>
+    </section> 
+    <section id="specific">
+        <div class="section-content">
+            <div class="info-container">
+                <h2 tagname="h2">Jewelry<br><span>Specifications</span></h2>
+                <hr class="r-gradient-color">
+                <p tagname="p">Build offers a comprehensive suite of modules to simplify product management, covering both individual products and entire brands. The sorting system, tag system for searching and filtering, and jewelry specifications aid in organization. Additionally, an AI content generator automates repetitive tasks, freeing up time for other business tasks. With these modules in place, product management becomes efficient and easy, providing a complete solution for stress-free website product management.</p> 
+                <!-- #232426 -->
+            </div>
+            <div class="img-container">
+                <img src="/1.0/uploads/source/product_magement/files/Ring Builder 7.png" alt="We Increased Traffic &amp; THE BOTTOM-LINE" loading="lazy" href="">
+            </div>
+        </div>
+    </section>
+    <section id="m_brand" class="white-section">
+        <div class="section-content">
+            <div class="info-container">
+                <h2 tagname="h2"><span tagname="span">Manage Brand</span></h2>
+                <hr>
+                <p tagname="p">The Manage Brand module streamlines brand management by allowing you to set rules for all products in a brand. You can manage multiple brands with just a few clicks. Changes can be applied to the shopping cart, prices, stock, product images, item page policy, content generator settings, button labels, and more, for an entire brand, all at once. This makes brand management faster and more efficient, whether you're adding new brands or managing existing ones. Simply select your desired specifications and apply to all products in the brand.</p> 
+            </div>
+            <div class="img-container">
+                <img src="/1.0/uploads/source/product_magement/files/Group 1108.png" alt="We Increased Traffic &amp; THE BOTTOM-LINE" loading="lazy" href="">
+            </div>
+        </div>
+    </section> 
+</body>
+</html>

@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>POS Connection</title>
+    <style>
+
+        body, html {
+    font-size: 15px !important;
+}
+        body {
+    background: #232426;
+    color: #fff;
+    font-family: 'Test Sohne', sans-serif;
+    margin: 0;
+}
+* {
+    font-family: Inter, sans-serif !important;
+}
+        section {
+    height: auto;
+    min-height: auto;
+}p, h1, h2, h3, h4, h5, h6 {
+    padding: 0;
+    margin: 0;
+}
+#banner .section-content {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 5vw;
+    /* padding: 7vw 10vw; */
+}
+#banner .section-content .info-container {
+    position: absolute;
+    padding: 16vw;
+    text-align: center;
+}
+
+.info-container .pos-module {
+    width: 60px;
+}img {
+    width: 100%;
+}.info-container hr {
+    margin: 1vw auto;
+}.r-gradient-color {
+    background: -webkit-linear-gradient(0deg, #FC8A5B, #F75851, #F06C82);
+}hr {
+    height: .3vw;
+    width: 10vw;
+    margin: 0 0 2vw;
+    background: black;
+    border: none;
+    min-width: 200px;
+    min-height: 5px;
+}#banner .info-container h2 {
+    font-size: 3.5vw;
+    font-weight: 600;
+}
+#banner .info-container p {
+    font-size: 1.06vw;
+    font-weight: 300;
+    letter-spacing: 1.2;
+    line-height: 1.5;
+    width: 92%;
+    margin-bottom: 2vw;
+}
+#banner .info-container p {
+    font-size: .73vw;
+    font-weight: 200;
+    line-height: 2;
+}
+#banner .vertical-div {
+    padding: 70px;
+}
+#banner .vertical {
+    transform: rotate(90deg);
+    min-height: 4px;
+}#banner .images {
+    display: flex;
+    justify-content: center;
+}#banner .images div {
+    display: flex;
+    border: 4px solid #fff;
+    border-radius: 50%;
+    padding: 15px;
+    width: 102px;
+    height: 102px;
+    justify-content: center;
+    align-items: center;
+    margin: 45.5px;
+}#banner .images .terminal {
+    width: 43px;
+    height: 71px;
+}#banner .images img {
+    width: 52px;
+    height: 52px;
+}#banner .images .setting {
+    width: 57px;
+    height: 61px;
+}
+@media (min-width:1440px) {
+                            #banner .section-content{
+                                background-image: url(/1.0/uploads/source/pos_connection/files/image\ 77.png);
+                                background-position:top;
+                                background-size: cover;
+                            }
+                        }
+                        @media (max-width:1440px) {
+                            #banner .section-content{
+                                background-image: url(/1.0/uploads/source/pos_connection/files/Jewelry-Store-Software-POS-System\ 1.png);
+                                background-position:top;
+                                background-size: cover;
+                                height: 1185px;
+                            }
+                            #banner .info-container p {
+                                font-size: .807vw;
+                                font-weight: 200;
+                                line-height: 1.8;
+                            }
+                            
+                        }
+
+#banner .section-content::before {
+    content: "";
+    display: block;
+    width: 100%;
+    height: inherit;
+    background: linear-gradient(rgba(35, 36, 37, 1), rgba(183, 118, 1, .2));
+    position: absolute;
+    /* top: 100px; */
+}
+#banner .section-content::after {
+    content: "";
+    display: block;
+    border-radius: 50%;
+    position: absolute;
+    top: 350px;
+    right: 0;
+    opacity: .4;
+    box-shadow: 0px 0px 270px 350px rgba(255, 71, 114, 1);
+}
+#banner .info-container p {
+    font-size: 0.83vw;
+    font-weight: 200;
+    letter-spacing: 0.0625vw;
+    line-height: 1.5;
+    /* width: 85%; */
+    margin-bottom: 1.5625vw;
+}
+section {
+    height: auto;
+    min-height: auto;
+}
+.white-section {
+    background: #FFFAF3;
+    color: #232426;
+}
+#seo, #l-in-stock, #a-generate, #sync-pos,#monitors {
+    padding: 7vw 10vw 0 10vw;
+}
+.section-content, #seo .section-content, #l-in-stock .section-content, #a-generate .section-content, #sync-pos .section-content {
+    width: 100%;
+    min-height: 100%;
+    min-height: auto;
+    display: flex;
+    justify-content: space-between;
+    justify-content: center;
+    align-items: center;
+    gap: 1%;
+}
+#seo .img-container, #l-in-stock .img-container, #a-generate .img-container, #sync-pos .img-container {
+    min-width: 30vw;
+}
+#monitors .img-container{
+    width: 65vw;
+}
+#seo .info-container, #l-in-stock .info-container, #a-generate .info-container, #sync-pos .info-container {
+    width: 34vw;
+}
+#seo .info-container h2, #l-in-stock .info-container h2, #a-generate .info-container h2, #sync-pos .info-container h2 {
+    font-size: 2.4vw;
+    font-weight: 400;
+    line-height: 1.2;
+    margin-bottom: 1.8vw;
+}
+hr {
+    height: .3vw;
+    width: 10vw;
+    margin: 0 0 2vw;
+    background: black;
+    border: none;
+    min-width: 200px;
+    min-height: 5px;
+}
+.info-container hr {
+    margin: 1vw auto;
+}
+#seo .info-container p, #l-in-stock .info-container p, #a-generate .info-container p, #sync-pos .info-container p {
+    font-size: 1.06vw;
+    font-size: .9vw;
+    font-weight: 300;
+    line-height: 1.5;
+    width: 93%;
+    margin-bottom: 2vw;
+}
+
+.r-gradient-color {
+    background: -webkit-linear-gradient(0deg, #FC8A5B, #F75851, #F06C82);
+}
+.info-container a {
+    display: inline-block;
+    color: #fff;
+    font-size: .95vw;
+    font-weight: 300;
+    letter-spacing: 1.2;
+    text-decoration: none;
+    padding: .8vw 2.5vw .9vw;
+}
+
+#seo .info-container h2 span, #l-in-stock .info-container h2 span, #a-generate .info-container h2 span, #sync-pos .info-container h2 span {
+    font-size: 3.5vw;
+    font-weight: 600;
+}
+#marketing {
+    padding: 15.625vw 7.8vw;
+}
+.white-section {
+    background: #FFFAF3;
+    color: #232426;
+}
+#marketing .section-content {
+    max-width: 62.5vw;
+    margin: auto;
+    width: 100%;
+    min-height: 100%;
+} 
+#marketing .section-content .row {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 2%;
+    row-gap: 1.71875vw;
+}
+#marketing .info-container {
+    width: 40%;
+    padding: 1.6vw 3.125vw 3.54vw 2.08vw;
+    box-shadow: 0 0.208vw 2.6041vw 0 rgba(0, 0, 0, 0.1);
+}
+#marketing .img-container img {
+    width: auto;
+    /* height: 5.416vw;
+    margin-bottom: 1.25vw; */
+}
+#marketing .info-container h3 {
+    font-size: 0.83vw;
+    font-weight: 500;
+    line-height: 1.2;
+    margin-bottom: 0.83vw;
+}
+#marketing .info-container p {
+    font-size: 0.72vw;
+    font-weight: 200;
+    line-height: 1.5;
+}
+
+    </style>
+</head>
+<body>
+    <section id="banner">
+        <div class="section-content">
+            <div class="info-container">
+                <img class="pos-module" src="/1.0/uploads/source/pos_connection/files/POS modules.png" alt="">
+                <hr class="r-gradient-color">
+                <h2 tagname="h2">POS Connection<br></h2>
+                <p tagname="p">Build offers a seamless solution for jewelry retailers by integrating multiple point-of-sale (POS) systems with online platforms. These connections ensure your in-store and online operations stay synchronized in real-time, eliminating manual updates. Whether using EDGE, LogicMate, or Crystal POS, Build instantly reflects inventory updates on your website. With a focus on user-friendly automation, Build helps jewelers run their businesses efficiently, keeping inventory accurate across channels. This technology allows retailers to stay competitive in the fast-paced jewelry industry with minimal effort.</p>
+                <div class="vertical-div">
+                    <hr class="r-gradient-color vertical">
+                </div>
+                <div class="images">
+                    <div>
+                        <img class="pos-module terminal" src="/1.0/uploads/source/pos_connection/files/POS Terminal 1.png" alt="">
+                    </div>    
+                    <div>
+                        <img class="pos-module" src="/1.0/uploads/source/pos_connection/files/Union.png" alt="">
+                    </div>
+                    <div>
+                        <img class="pos-module setting" src="/1.0/uploads/source/pos_connection/files/POS Terminal-2 1.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="l-in-stock" class="white-section">
+        <div class="section-content">
+            <div class="img-container">
+                <img src="/1.0/uploads/source/pos_connection/files/Group 1109.png" alt="We Increased Traffic &amp; THE BOTTOM-LINE" loading="lazy" href="">
+            </div>
+            <div class="info-container">
+                <h2 tagname="h2">List in-stock Inventory &amp;<br><span tagname="span">ON YOUR WEBSITE</span></h2>
+                <hr>
+                <p tagname="p">Build enables effortless syncing with your POS system, allowing real-time listing of in-stock inventory on your website. As products sell in-store or online, the platform automatically updates availability, keeping customers informed and reducing the risk of overselling. This integration ensures you’re always displaying accurate stock levels, enhancing the shopping experience. Build’s seamless compatibility with leading jewelry POS systems, such as EDGE, Logic Mate, Crystal, and Diaspark, allows for easy management of inventory across all sales channels.</p>
+                <a href="https://build.shop/design-tools" tabindex="0" class="r-gradient-color">Learn More<svg width="0.6vw" height="0.5vw" viewBox="0 0 9 8" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M8.35355 4.35355C8.54882 4.15829 8.54882 3.84171 8.35355 3.64645L5.17157 0.464466C4.97631 0.269204 4.65973 0.269204 4.46447 0.464466C4.2692 0.659728 4.2692 0.976311 4.46447 1.17157L7.29289 4L4.46447 6.82843C4.2692 7.02369 4.2692 7.34027 4.46447 7.53553C4.65973 7.7308 4.97631 7.7308 5.17157 7.53553L8.35355 4.35355ZM0 4.5L8 4.5V3.5L0 3.5L0 4.5Z" fill="white"></path></svg></a>
+            </div>
+        </div>
+    </section>
+    <section id="a-generate" class="white-section">
+        <div class="section-content">
+            <div class="info-container">
+                <h2 tagname="h2">Automatically Generate &amp;<br><span tagname="span">INVOCES ON POS</span></h2>
+                <hr>
+                <p tagname="p">With Build’s integration, detailed invoices are automatically generated through your POS system, streamlining your sales process. This automation significantly improves organization and professionalism, allowing you to focus on customer relations. Designed with the jewelry industry in mind, Build's invoice generation feature is tailored to simplify and smoothen your workflow. It eliminates manual steps, ensuring each transaction is properly documented, making operations more efficient and saving time for busy jewelers.</p>
+                <a href="https://build.shop/design-tools" tabindex="0" class="r-gradient-color">Learn More<svg width="0.6vw" height="0.5vw" viewBox="0 0 9 8" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M8.35355 4.35355C8.54882 4.15829 8.54882 3.84171 8.35355 3.64645L5.17157 0.464466C4.97631 0.269204 4.65973 0.269204 4.46447 0.464466C4.2692 0.659728 4.2692 0.976311 4.46447 1.17157L7.29289 4L4.46447 6.82843C4.2692 7.02369 4.2692 7.34027 4.46447 7.53553C4.65973 7.7308 4.97631 7.7308 5.17157 7.53553L8.35355 4.35355ZM0 4.5L8 4.5V3.5L0 3.5L0 4.5Z" fill="white"></path></svg></a>
+            </div>
+            <div class="img-container">
+                <img src="/1.0/uploads/source/pos_connection/files/Group 1108.png" alt="We Increased Traffic &amp; THE BOTTOM-LINE" loading="lazy" href="">
+            </div>
+        </div>
+    </section>
+    <section id="sync-pos" class="white-section">
+        <div class="section-content">
+            <div class="img-container">
+                <img src="/1.0/uploads/source/pos_connection/files/Group 1107.png" alt="We Increased Traffic &amp; THE BOTTOM-LINE" loading="lazy" href="">
+            </div>
+            <div class="info-container">
+                <h2 tagname="h2">Sync POS & Website &amp;<br><span tagname="span">CUSTOMER DATA</span></h2>
+                <hr>
+                <p tagname="p">Build ensures seamless syncing between your POS system and website to collect and store valuable customer data. This automated process makes data analysis and customer relationship management (CRM) much simpler, giving you easy access to insights. By organizing customer information into user-friendly formats, Build empowers jewelers to make informed decisions and provide better service. The real-time integration of customer data enhances both the online and in-store experience, creating a cohesive system that supports growth and efficiency.</p>
+                <a href="https://build.shop/design-tools" tabindex="0" class="r-gradient-color">Learn More<svg width="0.6vw" height="0.5vw" viewBox="0 0 9 8" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M8.35355 4.35355C8.54882 4.15829 8.54882 3.84171 8.35355 3.64645L5.17157 0.464466C4.97631 0.269204 4.65973 0.269204 4.46447 0.464466C4.2692 0.659728 4.2692 0.976311 4.46447 1.17157L7.29289 4L4.46447 6.82843C4.2692 7.02369 4.2692 7.34027 4.46447 7.53553C4.65973 7.7308 4.97631 7.7308 5.17157 7.53553L8.35355 4.35355ZM0 4.5L8 4.5V3.5L0 3.5L0 4.5Z" fill="white"></path></svg></a>
+            </div>
+        </div>
+    </section>
+    <section id="monitors" class="white-section">
+        <div class="section-content">
+            <div class="img-container">
+                <img src="/1.0/uploads/source/pos_connection/files/456 1.png" alt="We Increased Traffic &amp; THE BOTTOM-LINE" loading="lazy" href="">
+            </div>
+        </div>
+    </section>
+    <section id="marketing" class="white-section">
+        <div class="section-content">  
+            <div class="row">
+                <div class="info-container">
+                    <div class="img-container">
+                        <img src="/1.0/uploads/source/pos_connection/files/edge 3.png" alt="Promotions" loading="lazy" href="">
+                    </div>
+                    <h3 tagname="h3">Promotions</h3>
+                    <p tagname="p">Increase sales by offering streamlined promotions. Generate codes, offer an assortment of built-in promos, and easily manage coupons.</p>
+                </div>
+                <div class="info-container">
+                    <div class="img-container">
+                        <img src="/1.0/uploads/source/pos_connection/files/arms 1.png" alt="Popups" loading="lazy" href="">
+                    </div>
+                    <h3 tagname="h3">Popups</h3>
+                    <p tagname="p">Draw in attentions of every visitor with popups. Create in moments from premade templates or from scratch, to immediately boost your marketing.</p>
+                </div>
+                <div class="info-container">
+                    <div class="img-container">
+                        <img src="/1.0/uploads/source/pos_connection/files/logicmate-logo-120.png" alt="Page Funnels" loading="lazy" href="">
+                    </div>
+                    <h3 tagname="h3">Page Funnels</h3>
+                    <p tagname="p">Create high-converting squeeze pages with Build's easy-to-use page builder. Choose from templates or customize from scratch to achieve your goals.</p>
+                </div>
+                <div class="info-container">
+                    <div class="img-container">
+                        <img src="/1.0/uploads/source/pos_connection/files/crystal 2.png" alt="Blogs" loading="lazy" href="">
+                    </div>
+                    <h3 tagname="h3">Blogs</h3>
+                    <p tagname="p">Engage your audience and drive traffic with a blog. Easily create one using premade templates or customize it from scratch to boost your marketing.</p>
+                </div>
+                <div class="info-container">
+                    <div class="img-container">
+                        <img src="/1.0/uploads/source/pos_connection/files/519-5199866_diaspark-clipart 1.png" alt="Content Generator" loading="lazy" href="">
+                    </div>
+                    <h3 tagname="h3">Content Generator</h3>
+                    <p tagname="p">Generate unique product titles, descriptions, and metas. Automatically create SEO content for each and every product in a single, powerful function.</p>
+                </div>
+                <div class="info-container">
+                    <div class="img-container">
+                        <img src="/1.0/uploads/source/pos_connection/files/ls-logo-RedBlack 1.png" alt="Marketplaces" loading="lazy" href="">
+                    </div>
+                    <h3 tagname="h3">Marketplaces</h3>
+                    <p tagname="p">Increase product exposure by automatically posting products on marketplaces like Google and Facebook Shop, reaching more customers effortlessly.</p>
+                </div>
+            </div> 
+        </div>
+    </section>
+</body>
+</html>

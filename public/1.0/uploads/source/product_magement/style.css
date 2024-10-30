@@ -1,0 +1,257 @@
+@font-face {
+    font-family: 'Sohle';
+    src: url(fonts/TestSohneBreit-Buch-BF663d89ca2ff42.woff2);
+}
+
+body{
+    padding:0;
+    margin:0;
+    --mg-center:0 auto;
+}
+
+.mg-center{
+    margin: var(--mg-center);
+}
+.t-center{
+    text-align: center;
+}
+.o-line{
+    background: linear-gradient(86.07deg, #FD8D5C -1.64%, #F85751 49.06%, #EF718D 99.76%);
+}
+.b-line{
+    background: #232426;
+}
+.w-line{
+    background: #fff;
+}
+
+
+main{
+    background: #FFFAF3;
+    /* max-width:1920px; */
+    margin: auto;
+    font-family:'Sohle';
+}
+.row1{
+    background: linear-gradient(0deg, #fc8159, #fdf5ff);
+}
+
+.section-logo{
+    padding-top: 90px;
+    margin: 0 auto;
+    display: block;
+    margin-bottom:30px;
+}
+.header-section{
+    font-size: 4rem;
+    font-weight: 600;
+    margin:0;
+}
+.bottom_line{
+    height:5px;
+    width:200px;
+    /* background: linear-gradient(86.07deg, #FD8D5C -1.64%, #F85751 49.06%, #EF718D 99.76%); */
+    margin-top: 20px;
+}
+.context{
+    font-size: 16px;
+    margin-top: 20px;
+}
+
+.sec-1{
+    /* display: flex;
+    align-items: center; */
+    width:75%;
+    /* min-width:1400px; */
+    padding-top:250px;
+}
+.sec-1 .image{
+    text-align: center;
+    margin-top:84px;
+}
+.sec-1 .header-section{
+    text-align: start;
+}
+[class*=sec] h2.header-section{
+    font-size: 3rem;
+}
+[class*=sec] h4.header-section{
+    font-size:36px;
+}
+
+.sec-1 h2.header-section,
+.sec-3 h2.header-section{
+    text-transform: uppercase;
+}
+
+
+.sec-2{
+    width:50%;
+    /* min-width:932px; */
+    padding-top:300px;
+    text-align: center;
+}
+.sec-2 .image{
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    margin-top:50px;
+}
+.sec-3{
+    width:60%;
+    padding-top:300px;
+    /* display: flex;
+    justify-content: center; */
+}
+.sec-3 .image{
+    position: relative;
+}
+.sec-3 [class*='out']{
+    display: inline; 
+    position: absolute;
+    padding: 3%;
+    border-radius: 5%;
+    background: white;
+}
+.sec-3 .top-out{
+    top: -40px;
+    left: -20px;
+}
+.sec-3 .bottom-out{
+    bottom: -40px;
+    right: -20px;
+}
+
+
+.sec-4{
+    display: flex;
+    justify-content: center;
+    padding-top:250px;
+    margin-bottom: 50px;
+}
+.sec-4 .block{
+    background: #232426;
+    width: 364px;
+    margin:0 12px;
+    color:#fff;
+    box-sizing: border-box;
+    padding:46px 40px 41px 44px;
+    position: relative;
+    padding-bottom: 300px;
+}
+.sec-4 .image{
+    position: absolute;
+    bottom: 41px;
+    left:0;
+    width:100%;
+}
+.sec-4 .block img{
+    width: 100%;
+}
+.sec-4 h4{
+    color: #FFF;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 1em;
+}
+.sec-4 .context{
+    color: #ccc;
+    text-align: justify; 
+    font-size: 14px;
+    font-style: normal;
+    /* font-weight: 300; */
+    line-height: 150%; /* 21px */
+    letter-spacing: 0.28px;
+}
+
+
+@media (min-width:1440px){
+    main{
+        max-width:1920px;
+    }
+    .sec-1{
+        min-width:1400px;
+    }
+    .row1 .context{
+        width: 1141px;
+    }
+    .sec-3{
+        min-width:1166px;
+    }
+    .row1 .context{
+        width: 1141px;
+    }    
+    .sec-2{
+        min-width:932px;
+    }
+    .sec-3 .block{
+        padding: 8.8%;
+    }
+}
+.sec-2 img{
+    width:100%;
+}
+@media (max-width:1024px){
+    section[class*='sec']{
+        width:100%;
+    }
+    .sec-3 .bottom-out {
+        right: -10px;
+    }
+    .main-image{
+        text-align: center;
+        width:96%;
+        margin:0 auto;
+    }
+    section[class*='sec'] .image img:not([class*='out']){
+        width:100%;
+    }
+    section[class*='sec'] h2{
+        font-size: 36px !important;
+    }
+    .sec-4{
+        overflow: hidden;
+    }
+}
+@media (min-width:1024px){
+    .sec-1,
+    .sec-3{
+        display: flex;
+        align-items: center;
+    }
+}
+@media (min-width:1024px) and (max-width:1092px){
+    
+    
+    .sec-1,
+    .sec-1 img,
+    .sec-2,
+    .sec-3
+    {
+        width:100%;
+        justify-content: center;
+    }
+
+    .sec-1>div,
+    .sec-3>div
+    {
+        width:48%;
+        margin:0;
+    }
+    .sec-2 .block{
+        width:96%;
+    }
+    .sec-0 .context{
+        width:96%;
+    }
+    .sec-3 .block{
+        width:45%;
+        margin-left:3%;
+    }
+    .main-image img{
+        width:100%;
+    }
+
+}

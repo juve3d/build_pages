@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link rel="stylesheet" href="style.css"> -->
+    <title>jewlery web design tools</title>
+    <style>
+        @font-face {
+            font-family: 'Sohle';
+            src: url(fonts/TestSohneBreit-Buch-BF663d89ca2ff42.woff2);
+        }
+
+        body{
+            padding:0;
+            margin:0;
+            --mg-center:0 auto;
+        }
+
+        .mg-center{
+            margin: var(--mg-center);
+        }
+        .t-center{
+            text-align: center;
+        }
+        .o-line{
+            background: linear-gradient(86.07deg, #FD8D5C -1.64%, #F85751 49.06%, #EF718D 99.76%);
+        }
+        .b-line{
+            background: #232426;
+        }
+        .w-line{
+            background: #fff;
+        }
+
+
+        main{
+            background: #FFFAF3;
+            /* max-width:1920px; */
+            margin: auto;
+            font-family:'Sohle';
+        }
+        .row1{
+            background: linear-gradient(0deg, #fc8159, #fdf5ff);
+        }
+        .section-logo{
+            padding-top: 90px;
+            margin: 0 auto;
+            display: block;
+            margin-bottom:30px;
+        }
+        .header-section{
+            font-size: 4rem;
+            font-weight: 600;
+            margin:0;
+        }
+        .bottom_line{
+            height:5px;
+            width:200px;
+            /* background: linear-gradient(86.07deg, #FD8D5C -1.64%, #F85751 49.06%, #EF718D 99.76%); */
+            margin-top: 20px;
+        }
+        .context{
+            font-size: 16px;
+            margin-top: 20px;
+        }
+
+        .sec-1{
+            /* display: flex;
+            align-items: center; */
+            width:75%;
+            /* min-width:1400px; */
+            padding-top:250px;
+        }
+        .sec-1 .image{
+            text-align: center;
+            margin-top:84px;
+        }
+        .sec-1 .header-section{
+            text-align: start;
+        }
+        [class*=sec] h2.header-section{
+            font-size: 3rem;
+        }
+        [class*=sec] h4.header-section{
+            font-size:36px;
+        }
+
+        .sec-1 h2.header-section,
+        .sec-3 h2.header-section{
+            text-transform: uppercase;
+        }
+
+
+        .sec-2{
+            width:50%;
+            /* min-width:932px; */
+            padding-top:300px;
+            text-align: center;
+        }
+        .sec-2 .image{
+            display: flex;
+            position: relative;
+            justify-content: center;
+            align-items: center;
+            margin-top:50px;
+        }
+        .sec-3{
+            width:60%;
+            padding-top:300px;
+            /* display: flex;
+            justify-content: center; */
+        }
+        .sec-3 .image{
+            position: relative;
+        }
+        .sec-3 [class*='out']{
+            display: inline; 
+            position: absolute;
+            padding: 3%;
+            border-radius: 5%;
+            background: white;
+        }
+        .sec-3 .top-out{
+            top: -40px;
+            left: -20px;
+        }
+        .sec-3 .bottom-out{
+            bottom: -40px;
+            right: -20px;
+        }
+
+
+        .sec-4{
+            display: flex;
+            justify-content: center;
+            padding-top:250px;
+            margin-bottom: 50px;
+        }
+        .sec-4 .block{
+            background: #232426;
+            width: 364px;
+            margin:0 12px;
+            color:#fff;
+            box-sizing: border-box;
+            padding:46px 40px 41px 44px;
+            position: relative;
+            padding-bottom: 300px;
+        }
+        .sec-4 .image{
+            position: absolute;
+            bottom: 41px;
+            left:0;
+            width:100%;
+        }
+        .sec-4 .block img{
+            width: 100%;
+        }
+        .sec-4 h4{
+            color: #FFF;
+            font-size: 24px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 1em;
+        }
+        .sec-4 .context{
+            color: #ccc;
+            text-align: justify; 
+            font-size: 14px;
+            font-style: normal;
+            /* font-weight: 300; */
+            line-height: 150%; /* 21px */
+            letter-spacing: 0.28px;
+        }
+
+
+        @media (min-width:1440px){
+            main{
+                max-width:1920px;
+            }
+            .sec-1{
+                min-width:1400px;
+            }
+            .row1 .context{
+                width: 1141px;
+            }
+            .sec-3{
+                min-width:1166px;
+            }
+            .row1 .context{
+                width: 1141px;
+            }    
+            .sec-2{
+                min-width:932px;
+            }
+            .sec-3 .block{
+                padding: 8.8%;
+            }
+        }
+        .sec-2 img{
+            width:100%;
+        }
+        @media (max-width:1024px){
+            section[class*='sec']{
+                width:100%;
+            }
+            .sec-3 .bottom-out {
+                right: -10px;
+            }
+            .main-image{
+                text-align: center;
+                width:96%;
+                margin:0 auto;
+            }
+            section[class*='sec'] .image img:not([class*='out']){
+                width:100%;
+            }
+            section[class*='sec'] h2{
+                font-size: 36px !important;
+            }
+            .sec-4{
+                overflow: hidden;
+            }
+        }
+        @media (min-width:1024px){
+            .sec-1,
+            .sec-3{
+                display: flex;
+                align-items: center;
+            }
+        }
+        @media (min-width:1024px) and (max-width:1092px){
+            
+            
+            .sec-1,
+            .sec-1 img,
+            .sec-2,
+            .sec-3
+            {
+                width:100%;
+                justify-content: center;
+            }
+
+            .sec-1>div,
+            .sec-3>div
+            {
+                width:48%;
+                margin:0;
+            }
+            .sec-2 .block{
+                width:96%;
+            }
+            .sec-0 .context{
+                width:96%;
+            }
+            .sec-3 .block{
+                width:45%;
+                margin-left:3%;
+            }
+            .main-image img{
+                width:100%;
+            }
+
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <section class="sec-0">
+            <div class="block row1 mg-center">
+                <img class="section-logo" src="files/Jewelry Web Design Tools 1.png" alt="">
+                <h2 class="header-section t-center">Jewelry Web Design Tools</h2>
+                <div class="bottom_line mg-center"></div>
+                <div class="context mg-center">
+                    <span>Build provides powerful yet easy-to-use design tools tailored specifically for the jewelry industry. These tools enable you to create stunning product pages, custom layouts, and engaging visuals, helping you reflect your company image online and showcase your jewelry collection exactly the way you desire. 
+                    </span>
+                </div>
+                <div class="image">
+                    <img src="files/Design tools 1.png" alt="">
+                </div>
+            </div>
+        </section>
+        <section class="sec-1 mg-center">
+            <div class="block mg-center">
+                <h4 class="header-section t-center">Introducing</h4>
+                <h2 class="header-section t-center">design studio</h2>
+                <div class="bottom_line b-line"></div>
+                <div class="context">
+                    <span>Design Studio is an ideal tool for jewelers to create stunning static and form pages with ease. Using pre-built row templates, you can showcase your collections and customize layouts to match your brand. For advanced users, CSS/HTML offers full creative control, helping you design professional, beautiful pages effortlessly.</span>
+                </div>
+            </div>
+            <div class="image">
+                <img src="files/customizable website builder 3.png" alt="">
+            </div>
+        </section>
+        <section class="sec-2 mg-center">
+            <div class="block mg-center"> 
+                <h2 class="header-section">Page Templates</h2>
+                <div class="bottom_line b-line mg-center"></div>
+                <div class="context">
+                    <span>Choose a template, name your page, and start building a beautiful page in just a few clicks.
+                        Build’s Design Studio offers an all-in-one solution for creating stunning jewelry websites. With a library of templates like About Us, RSVP, and jewelry-specific landing pages, it simplifies the design process using a drag-and-drop interface.</span>
+                </div>
+            </div>
+            <div class="image">
+                <img src="/files/Group 1103.png" alt="">
+            </div>
+        </section>
+        
+        <section class="sec-3 mg-center">
+            <div class="image">
+                <div class="image-block top-out">
+                    <img src="files/Dashboard.png" alt="">
+                </div>
+                <div class="image-block main-image">
+                    <img src="files/image 58.png" alt="">
+                </div>
+                <div class="image-block bottom-out">
+                    <img src="files/Dashboard (1).png" alt="">
+                </div>
+            </div>
+            <div class="block mg-center">
+                <h4 class="header-section">Custom</h4>
+                <h2 class="header-section">Templates</h2>
+                <div class="bottom_line b-line"></div>
+                <div class="context">
+                    <span>Use Build's Layout Builder to easily customize your website’s:
+                        <ul>
+                            <li>Header</li>
+                            <li>Footer</li>
+                            <li>product Pages</li>
+                            <li>Filter Pages</li>
+                            <li>Blogs</li>
+                            <li>And more...</li>
+                        </ul>
+                        With a wide range of customization options, you can create a website that truly stands out and provides a seamless experience for your customers.</span>
+                </div>
+            </div>
+        </section>
+        <section class="sec-4">
+            <div class="block mg-center">
+                <h4>Jewelry Products Page Builder</h4>
+                <div class="bottom_line w-line"></div>
+                <div class="context">
+                    <span>Build’s Jewelry Products Page Builder is a powerful tool designed specifically for jewelers, providing a seamless experience right from the start. The default settings present a visually appealing layout, highlighting product images, specifications, and essential details in an elegant, user-friendly format. Whether you’re showcasing diamonds, rings, or other jewelry, this tool ensures a professional display without extensive setup. Additionally, it offers complete customization, allowing you to tailor each page to your brand's unique style. Whether you need subtle tweaks or a full redesign, Build’s product page builder is versatile and robust, making it easy to elevate your online jewelry store.</span>
+                </div>
+                <div class="image">
+                    <img src="files/Image.png" alt="">
+                </div>
+            </div>
+            <div class="block mg-center">
+                <h4>Diamond Search Page Builder</h4>
+                <div class="bottom_line w-line"></div>
+                <div class="context">
+                    <span>Build's Diamond Search Page Builder is an essential tool for your jewelry website. This page builder allows you to easily set up a search page for diamonds based on a vast range of criteria. With integrations via diamond sources such as Rapnet and VDB, you can automatically populate images for the diamonds you are selling. You can even add placeholder images for those diamonds where real images from the vendor are not available. Customers visiting the site will have easy access to beautiful images of all diamonds. This is a must-have module for any jewelers selling diamonds, who are also interested in creating a top-notch website.</span>
+                </div>
+                <div class="image">
+                    <img src="files/Image (1).png" alt="">
+                </div>
+            </div>
+            <div class="block mg-center">
+                <h4>Jewelry Products Page Builder</h4>
+                <div class="bottom_line w-line"></div>
+                <div class="context">
+                    <span>Build’s Jewelry Products Page Builder is a powerful tool designed specifically for jewelers, providing a seamless experience right from the start. The default settings present a visually appealing layout, highlighting product images, specifications, and essential details in an elegant, user-friendly format. Whether you’re showcasing diamonds, rings, or other jewelry, this tool ensures a professional display without extensive setup. Additionally, it offers complete customization, allowing you to tailor each page to your brand's unique style. Whether you need subtle tweaks or a full redesign, Build’s product page builder is versatile and robust, making it easy to elevate your online jewelry store.</span>
+                </div>
+                <div class="image">
+                    <img src="files/Image.png" alt="">
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+</html>
