@@ -218,26 +218,28 @@ body, html {
     height: 61px;
 }
 @media (min-width:1440px) {
-                            #banner .section-content{
-                                background-image: url(./1.0/uploads/source/pos_connection/files/image\ 77.png);
-                                background-position:top;
-                                background-size: cover;
-                            }
-                        }
-                        @media (max-width:1440px) {
-                            #banner .section-content{
-                                background-image: url(./1.0/uploads/source/pos_connection/files/Jewelry-Store-Software-POS-System\ 1.png);
-                                background-position:top;
-                                background-size: cover;
-                                height: 1185px;
-                            }
-                            #banner .info-container p {
-                                font-size: .807vw;
-                                font-weight: 200;
-                                line-height: 1.8;
-                            }
-                            
-                        }
+    #banner .section-content{
+        background-image: url(./1.0/uploads/source/pos_connection/files/image\ 77.png);
+        background-position:top;
+        background-size: cover;
+    }
+}
+@media (max-width:1440px) {
+    #banner .section-content{
+        background-image: url(./1.0/uploads/source/pos_connection/files/Jewelry-Store-Software-POS-System\ 1.png);
+        background-position:top;
+        background-size: cover;
+        height: 1185px;
+    }
+    #banner .info-container p {
+        font-size: .807vw;
+        font-weight: 200;
+        line-height: 1.8;
+    }
+    
+}
+
+
 
 #banner .section-content::before {
     content: "";
@@ -385,6 +387,83 @@ hr {
     line-height: 1.5;
 }
 
+
+
+
+@media (min-width:1440px) and (max-width:1920px) {
+    #monitors .img-container {
+        width: 100%;
+    }
+    #marketing {
+        padding: 15.625vw 10vw;
+    }
+    #marketing .section-content {
+        max-width: 100%;
+    }
+}
+
+@media (min-width:1024px) and (max-width:1440px){
+    #l-in-stock, #a-generate, #sync-pos, #monitors{
+        padding: 7vw 5vw 0 5vw;
+    }
+    #monitors{
+        width: 100%;
+        padding: 7vw 0 0 0;
+    }
+    #monitors .img-container {
+        width: 100%;
+    }
+    #marketing {
+        padding: 15.625vw 5vw;
+    }
+    #marketing .section-content {
+        max-width: 100%;
+    }
+    #marketing .info-container {
+        width: 43%;
+    }
+}
+
+@media (max-width:1024px){
+    #banner .section-content{
+        background: none;
+        height: 800px;
+    }
+    #banner .section-content::after,
+    #banner .section-content::before{
+        display: none;
+    }
+    #banner .section-content .info-container{
+        padding: 0;
+    }
+    #banner .images div{
+        width: 73px;
+        height: 73px;
+        margin:2%;
+    }
+    .info-container hr{
+        margin: 2rem auto 1.2rem auto;
+    }
+    #banner .info-container h2{
+        font-size: 2rem;
+        margin-bottom:2rem;
+    }
+    #banner .info-container p{
+        font-size: 1rem;
+        margin: 0 auto;
+        margin-bottom:1rem;
+    }
+
+    #marketing .section-content .row{
+        display: block;
+    }
+    #marketing .info-container{
+        width:100%;
+    }
+    #banner .images{
+        margin-top:1rem;
+    }
+}
     </style>
 </head>
 <body>
