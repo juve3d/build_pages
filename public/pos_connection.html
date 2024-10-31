@@ -217,6 +217,9 @@ body, html {
     width: 57px;
     height: 61px;
 }
+.mobile{
+    display: none;
+}
 @media (min-width:1440px) {
     #banner .section-content{
         background-image: url(./1.0/uploads/source/pos_connection/files/image\ 77.png);
@@ -425,6 +428,9 @@ hr {
 }
 
 @media (max-width:1024px){
+    body{
+        /* background: #FFFAF3; */
+    }
     #banner .section-content{
         background: none;
         height: 800px;
@@ -463,6 +469,46 @@ hr {
     #banner .images{
         margin-top:1rem;
     }
+    #l-in-stock, #a-generate, #sync-pos, #monitors {
+        padding: 7vw 5vw 9.37rem 5vw;
+    }
+    #l-in-stock .info-container, #a-generate .info-container, #sync-pos .info-container {
+        width:100%;
+    }
+    #l-in-stock .info-container:not(.mobile), 
+    #a-generate .info-container:not(.mobile), 
+    #sync-pos .img-container img:not(.mobile),
+    #monitors {
+        display: none;
+    }
+    #l-in-stock .section-content, 
+    #a-generate .section-content, 
+    #sync-pos .section-content{
+        display: block;
+    }
+    #l-in-stock .info-container p, #a-generate .info-container p, #sync-pos .info-container p{
+        font-size: .9rem;
+        width: 100%;
+        margin-bottom: 2rem;
+    }
+    #l-in-stock .info-container h2, #a-generate .info-container h2, #sync-pos .info-container h2{
+        font-size: 1.5rem;
+    }
+    #l-in-stock .info-container h2 span, #a-generate .info-container h2 span, #sync-pos .info-container h2 span{
+        font-size: 2.25rem;
+    }
+    .mobile{
+        display: block;
+    }
+    .info-container a {
+        display: inline-block;
+        width: 8.5rem;
+        color: #fff;
+        font-size: .9rem;
+        font-weight: 400; 
+        padding: 0.53rem 2.5vw .53rem;
+    }
+
 }
     </style>
 </head>
@@ -493,6 +539,11 @@ hr {
     </section>
     <section id="l-in-stock" class="white-section">
         <div class="section-content">
+            <div class="info-container mobile">
+                <h2 tagname="h2">List in-stock Inventory &amp;<br><span tagname="span">ON YOUR WEBSITE</span></h2>
+                <hr>
+                <p tagname="p">Build enables effortless syncing with your POS system, allowing real-time listing of in-stock inventory on your website. As products sell in-store or online, the platform automatically updates availability, keeping customers informed and reducing the risk of overselling. This integration ensures you’re always displaying accurate stock levels, enhancing the shopping experience. Build’s seamless compatibility with leading jewelry POS systems, such as EDGE, Logic Mate, Crystal, and Diaspark, allows for easy management of inventory across all sales channels.</p>
+            </div>
             <div class="img-container">
                 <img src="./1.0/uploads/source/pos_connection/files/Group 1109.png" alt="We Increased Traffic &amp; THE BOTTOM-LINE" loading="lazy" href="">
             </div>
@@ -500,6 +551,9 @@ hr {
                 <h2 tagname="h2">List in-stock Inventory &amp;<br><span tagname="span">ON YOUR WEBSITE</span></h2>
                 <hr>
                 <p tagname="p">Build enables effortless syncing with your POS system, allowing real-time listing of in-stock inventory on your website. As products sell in-store or online, the platform automatically updates availability, keeping customers informed and reducing the risk of overselling. This integration ensures you’re always displaying accurate stock levels, enhancing the shopping experience. Build’s seamless compatibility with leading jewelry POS systems, such as EDGE, Logic Mate, Crystal, and Diaspark, allows for easy management of inventory across all sales channels.</p>
+                <a href="https://build.shop/design-tools" tabindex="0" class="r-gradient-color">Learn More<svg width="0.6vw" height="0.5vw" viewBox="0 0 9 8" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M8.35355 4.35355C8.54882 4.15829 8.54882 3.84171 8.35355 3.64645L5.17157 0.464466C4.97631 0.269204 4.65973 0.269204 4.46447 0.464466C4.2692 0.659728 4.2692 0.976311 4.46447 1.17157L7.29289 4L4.46447 6.82843C4.2692 7.02369 4.2692 7.34027 4.46447 7.53553C4.65973 7.7308 4.97631 7.7308 5.17157 7.53553L8.35355 4.35355ZM0 4.5L8 4.5V3.5L0 3.5L0 4.5Z" fill="white"></path></svg></a>
+            </div>
+            <div class="info-container mobile">
                 <a href="https://build.shop/design-tools" tabindex="0" class="r-gradient-color">Learn More<svg width="0.6vw" height="0.5vw" viewBox="0 0 9 8" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M8.35355 4.35355C8.54882 4.15829 8.54882 3.84171 8.35355 3.64645L5.17157 0.464466C4.97631 0.269204 4.65973 0.269204 4.46447 0.464466C4.2692 0.659728 4.2692 0.976311 4.46447 1.17157L7.29289 4L4.46447 6.82843C4.2692 7.02369 4.2692 7.34027 4.46447 7.53553C4.65973 7.7308 4.97631 7.7308 5.17157 7.53553L8.35355 4.35355ZM0 4.5L8 4.5V3.5L0 3.5L0 4.5Z" fill="white"></path></svg></a>
             </div>
         </div>
@@ -512,6 +566,12 @@ hr {
                 <p tagname="p">With Build’s integration, detailed invoices are automatically generated through your POS system, streamlining your sales process. This automation significantly improves organization and professionalism, allowing you to focus on customer relations. Designed with the jewelry industry in mind, Build's invoice generation feature is tailored to simplify and smoothen your workflow. It eliminates manual steps, ensuring each transaction is properly documented, making operations more efficient and saving time for busy jewelers.</p>
                 <a href="https://build.shop/design-tools" tabindex="0" class="r-gradient-color">Learn More<svg width="0.6vw" height="0.5vw" viewBox="0 0 9 8" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M8.35355 4.35355C8.54882 4.15829 8.54882 3.84171 8.35355 3.64645L5.17157 0.464466C4.97631 0.269204 4.65973 0.269204 4.46447 0.464466C4.2692 0.659728 4.2692 0.976311 4.46447 1.17157L7.29289 4L4.46447 6.82843C4.2692 7.02369 4.2692 7.34027 4.46447 7.53553C4.65973 7.7308 4.97631 7.7308 5.17157 7.53553L8.35355 4.35355ZM0 4.5L8 4.5V3.5L0 3.5L0 4.5Z" fill="white"></path></svg></a>
             </div>
+            <div class="info-container mobile">
+                <h2 tagname="h2">Automatically Generate &amp;<br><span tagname="span">INVOCES ON POS</span></h2>
+                <hr>
+                <p tagname="p">With Build’s integration, detailed invoices are automatically generated through your POS system, streamlining your sales process. This automation significantly improves organization and professionalism, allowing you to focus on customer relations. Designed with the jewelry industry in mind, Build's invoice generation feature is tailored to simplify and smoothen your workflow. It eliminates manual steps, ensuring each transaction is properly documented, making operations more efficient and saving time for busy jewelers.</p>
+                
+            </div>
             <div class="img-container">
                 <img src="./1.0/uploads/source/pos_connection/files/Group 1108.png" alt="We Increased Traffic &amp; THE BOTTOM-LINE" loading="lazy" href="">
             </div>
@@ -519,6 +579,11 @@ hr {
     </section>
     <section id="sync-pos" class="white-section">
         <div class="section-content">
+            <div class="info-container mobile">
+                <h2 tagname="h2">Sync POS & Website &amp;<br><span tagname="span">CUSTOMER DATA</span></h2>
+                <hr>
+                <p tagname="p">Build ensures seamless syncing between your POS system and website to collect and store valuable customer data. This automated process makes data analysis and customer relationship management (CRM) much simpler, giving you easy access to insights. By organizing customer information into user-friendly formats, Build empowers jewelers to make informed decisions and provide better service. The real-time integration of customer data enhances both the online and in-store experience, creating a cohesive system that supports growth and efficiency.</p> 
+            </div>
             <div class="img-container">
                 <img src="./1.0/uploads/source/pos_connection/files/Group 1107.png" alt="We Increased Traffic &amp; THE BOTTOM-LINE" loading="lazy" href="">
             </div>
@@ -534,6 +599,7 @@ hr {
         <div class="section-content">
             <div class="img-container">
                 <img src="./1.0/uploads/source/pos_connection/files/456 1.png" alt="We Increased Traffic &amp; THE BOTTOM-LINE" loading="lazy" href="">
+                <img class="mobile" src="./1.0/uploads/source/pos_connection/files/456 1 mob.png" alt="We Increased Traffic &amp; THE BOTTOM-LINE" loading="lazy" href="">
             </div>
         </div>
     </section>
