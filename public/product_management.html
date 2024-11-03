@@ -241,16 +241,16 @@ section {
     background: #FFFAF3;
     color: #232426;
 }
-#m_product,#m_brand {
+#m_product,#m_brand,#smart-product {
     padding: 7vw 10vw 0 10vw;
 }
 #m_product{
     padding-top:10vw;
 }
-#m_brand{
+#m_brand,#smart-product{
     padding-bottom:10vw;
 }
-.section-content, #m_product .section-content, #m_brand .section-content{
+.section-content, #m_product .section-content, #m_brand .section-content,#smart-product .section-content{
     width: 100%;
     min-height: 100%;
     min-height: auto;
@@ -260,17 +260,17 @@ section {
     align-items: center;
     gap: 1%;
 }
-#m_product .img-container, #m_brand .img-container {
+#m_product .img-container, #m_brand .img-container, #smart-product .img-container{
     min-width: 30vw;
 }
 #monitors .img-container{
     width: 65vw;
 }
-#m_product .info-container, #m_brand .info-container {
+#m_product .info-container, #m_brand .info-container, #smart-product .info-container{
     width: 28vw;
     margin-left: 3vw;
 }
-#m_product .info-container h2, #m_brand .info-container h2 {
+#m_product .info-container h2, #m_brand .info-container h2 , #smart-product .info-container h2 {
     font-size: 2.4vw;
     font-weight: 400;
     line-height: 1.2; 
@@ -287,7 +287,7 @@ hr {
 .info-container hr {
     margin: 1.5vw auto;
 }
-#m_product .info-container p,#m_brand .info-container p{
+#m_product .info-container p,#m_brand .info-container p, #smart-product .info-container p{
     font-size: 1.06vw;
     font-size: .9vw;
     font-weight: 300;
@@ -309,11 +309,11 @@ hr {
     padding: .8vw 2.5vw .9vw;
 }
 
-#m_product .info-container h2 span, #m_brand .info-container h2 span{
+#m_product .info-container h2 span, #m_brand .info-container h2 span, #smart-product .info-container h2 span{
     font-size: 1.25vw;
     font-weight: 600;
 }
-#m_product hr,#m_brand hr{
+#m_product hr,#m_brand hr ,#smart-product hr{
     margin:1vw 0 2vw 0;
     width: 8vw;
     min-width: 150px;
@@ -363,8 +363,193 @@ hr {
     letter-spacing: 0.0625vw;
     line-height: 1.5;
 }
+@media (min-width:1440px){
+    #banner .info-container h2{
+        font-size: 4rem;
+    }
+    #m_product .info-container, 
+    #m_brand .info-container,
+    #smart-product .info-container{
+        width: 35vw;
+    }
+    #banner .info-container p,
+    #m_product .info-container p, 
+    #m_brand .info-container p,
+    #smart-product .info-container p,
+    #specific .info-container p{
+        font-size: 1rem;
+        line-height: 1.5rem;
+    }
+    #specific .info-container p {
+        width: 64vw;
+        letter-spacing: 0.0625vw;
+}
+    #m_product .info-container h2 span, 
+    #smart-product .info-container h2 span, 
+    #m_brand .info-container h2 span {
+        font-size: 1.5rem;
+        font-weight: 600;
+    }
+    #marketing .section-content{
+        max-width: 100%;
+        width:85%;
+    }
+    
+    #marketing .info-container p{
+        font-size:.875rem;
+    }
+    #specific .info-container p{
+        width: 77.5vw;
+    }
+}
+@media (min-width:1024px) and (max-width:1440px){
+    #banner .info-container h2{
+        font-size:4rem;
+    }
+    #banner .info-container p,
+    #smart-product .info-container p,
+    #m_product .info-container p, 
+    #m_brand .info-container p,
+    #specific .info-container p{
+        font-size: 1rem;
+        line-height: 1.5rem;
+    }
+    #banner .info-container p{
+        width:86vw;
+    }
+    #marketing .section-content{
+        max-width:100%;
+        width: 96%;
+    }
+    #marketing .info-container p {
+        font-size: .9rem; 
+    }
+    #m_product, #m_brand {
+        padding: 7vw 5vw 0 5vw;
+    }
+    #m_product .info-container, 
+    #smart-product .info-container, 
+    #m_brand .info-container {
+        width: 49vw;
+    }
+    #m_product .info-container h2 span, 
+    #smart-product .info-container h2 span, 
+    #m_brand .info-container h2 span {
+        font-size: 1.6rem;
+    }
+    #m_product hr, 
+    #smart-product hr, 
+    #m_brand hr {
+        min-width: 110px;
+    }
+    #m_brand,
+    #smart-product{
+        padding: 7vw 5vw 19.5vw 5vw;
+    }
+    #specific .info-container p {
+        width: 94%;
+    }
+    #specific .section-content .info-container {
+        padding-top: 19.5vw;
+    }
+    #specific .info-container h2 span {
+        font-size: 3.25rem;
+    }
+    #specific .info-container h2{
+        font-size: 2.25rem;
+    }
+}
 
+@media (max-width:1024px){
+    #banner .info-container h2, #specific .info-container h2 {
+        font-size: 2.4rem;
+        line-height: 2.267rem;
+    }
+    #banner .info-container hr{
+        min-width: 8.8rem;
+        margin: 20px auto;
+    }
+    #banner .info-container p {
+        font-size: 1.067rem;
+        line-height: 1.6rem;
+        width: 100%;
+    }
+    #banner .section-content .info-container{
+        padding: 60px 4vw;
+    }
+    #banner img:not(.mobile){
+        display: none;
+    }
+    .section-content, 
+    #m_product .section-content, 
+    #smart-product .section-content, 
+    #m_brand .section-content{
+        display: block;
+    }
+    #marketing .section-content .row {
+        display: flex;
+        justify-content: space-between;
+        width: 137%;
+    }
+    #marketing .info-container p{
+        font-size: 0.933rem;
+    }
+    #marketing .section-content {
+        min-width: 100%;
+    }
+    #m_product, 
+    #smart-product, 
+    #m_brand {
+        padding: 7vw 4vw 0 4vw;
+    }
+    #m_product .info-container h2 span, 
+    #smart-product .info-container h2 span, 
+    #m_brand .info-container h2 span {
+        font-size: 1.6rem;
+    }
+    #m_product .info-container, 
+    #smart-product .info-container, 
+    #m_brand .info-container {
+        width: 100%;
+    }
+    #m_product .info-container p, 
+    #smart-product .info-container p, 
+    #m_brand .info-container p {
+        font-size: 0.933rem;
+    }
+    #m_product .info-container:not(.mobile),
+    #smart-product .info-container:not(.mobile)
+    {
+        display:none;
+    }
+    #smart-product .info-container h2,
+    #smart-product .info-container hr{
+        display: none;
+    }
+    #smart-product .img-container .mobile{
+        text-align: center;
+    }
+    #smart-product .img-container .mobile hr{
+        margin: 1vw auto 2vw auto;
+        background: #FB7A58;
+        min-height: 2px;
+        min-width: 100%;
+    }
+    #smart-product .img-container .mobile span{
+        color: #FB7A58;
+        font-size: 19px;
+        font-family: Arial;
+    }
+}
+@media (min-width:1024px){
+    #m_product .mobile,
+    #smart-product .mobile,
+    #banner img.mobile{
+        display:none;
+    }
+}
 
+    
     </style>
 </head>
 <body>
@@ -386,6 +571,7 @@ hr {
             <div class="img-container">
                 <!-- <img src="/1.0/uploads/source/product_magement/files/shutterstock_2361518699 1.png" alt="We Increased Traffic &amp; THE BOTTOM-LINE" loading="lazy" href=""> -->
                 <img src="./1.0/uploads/source/product_magement/files/shutterstock_2361518699 1.png" alt="We Increased Traffic &amp; THE BOTTOM-LINE" loading="lazy" href="">
+                <img class="mobile" src="./1.0/uploads/source/product_magement/files/image 33mob.png" alt="We Increased Traffic &amp; THE BOTTOM-LINE" loading="lazy" href="">
             </div>
         </div>
     </section>
@@ -425,6 +611,11 @@ hr {
     </section>
     <section id="m_product" class="white-section">
         <div class="section-content">
+            <div class="info-container mobile">
+                <h2 tagname="h2"><span tagname="span">Manage Products</span></h2>
+                <hr>
+                <p tagname="p">Build's Manage Products module makes adding/editing products on your website a breeze. Products can be added locally or from automated sources like Larovo or POS. This makes marketing/selling more efficient and convenient. Quick edits to product details, images, prices, SEO, market settings, and variations are possible. Viewing, filtering, searching, sorting, downloading, and printing product information is effortless with the click of a button. This module sets up all necessary product-related steps for efficient website use, with easy management from the back end.</p> 
+            </div>
             <div class="img-container">
                 <img src="./1.0/uploads/source/product_magement/files/Group 1107.png" alt="We Increased Traffic &amp; THE BOTTOM-LINE" loading="lazy" href="">
             </div>
@@ -452,7 +643,7 @@ hr {
             <div class="info-container">
                 <h2 tagname="h2">Jewelry<br><span>Specifications</span></h2>
                 <hr class="r-gradient-color">
-                <p tagname="p">Build offers a comprehensive suite of modules to simplify product management, covering both individual products and entire brands. The sorting system, tag system for searching and filtering, and jewelry specifications aid in organization. Additionally, an AI content generator automates repetitive tasks, freeing up time for other business tasks. With these modules in place, product management becomes efficient and easy, providing a complete solution for stress-free website product management.</p> 
+                <p tagname="p">Build's system implements industry-standard jewelry specifications, making it easy to categorize and track products. With a wide range of product types and detailed specifications included in the Build’s functionality, businesses and customers have access to a great deal of versatility and specificity. This helps ensure that every product is easily organized and readily accessible, making the application of these specifications an essential function of any jewelry-specific CMS. The incorporation of industry standard specifications makes Build a comprehensive and user-friendly solution for managing jewelry products.</p> 
                 <!-- #232426 -->
             </div>
             <div class="img-container">
@@ -460,15 +651,22 @@ hr {
             </div>
         </div>
     </section>
-    <section id="m_brand" class="white-section">
+    <section id="smart-product" class="white-section">
         <div class="section-content">
             <div class="info-container">
-                <h2 tagname="h2"><span tagname="span">Manage Brand</span></h2>
+                <h2 tagname="h2"><span tagname="span">Smart Product Sorting</span></h2>
                 <hr>
-                <p tagname="p">The Manage Brand module streamlines brand management by allowing you to set rules for all products in a brand. You can manage multiple brands with just a few clicks. Changes can be applied to the shopping cart, prices, stock, product images, item page policy, content generator settings, button labels, and more, for an entire brand, all at once. This makes brand management faster and more efficient, whether you're adding new brands or managing existing ones. Simply select your desired specifications and apply to all products in the brand.</p> 
+                <p tagname="p">With Build's Smart Product Sorting, you can enhance your customers' experience with quick and versatile product sorting options. The precise control over search and view options allows clients to find what they need effortlessly. The advanced data mixer integrates product information for precise sorting options, giving you and your customers accurate and thorough accessibility of your inventory. Offer a top-notch customer experience and increase satisfaction with Build's Smart Product Sorting.</p> 
             </div>
             <div class="img-container">
-                <img src="./1.0/uploads/source/product_magement/files/Group 1108.png" alt="We Increased Traffic &amp; THE BOTTOM-LINE" loading="lazy" href="">
+                <div class="mobile">
+                    <h2 tagname="h2"><span tagname="span">Smart Product Sorting</span></h2>
+                    <hr>
+                </div>
+                <img src="./1.0/uploads/source/product_magement/files/Group 1132.png" alt="We Increased Traffic &amp; THE BOTTOM-LINE" loading="lazy" href="">
+            </div>
+            <div class="info-container mobile">
+                <p tagname="p">With Build's Smart Product Sorting, you can enhance your customers' experience with quick and versatile product sorting options. The precise control over search and view options allows clients to find what they need effortlessly. The advanced data mixer integrates product information for precise sorting options, giving you and your customers accurate and thorough accessibility of your inventory. Offer a top-notch customer experience and increase satisfaction with Build's Smart Product Sorting.</p> 
             </div>
         </div>
     </section> 
