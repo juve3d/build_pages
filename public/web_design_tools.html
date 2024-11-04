@@ -1,0 +1,606 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jewelry Product Management</title>
+    <style>
+@font-face {
+    font-family: 'Soehne';
+    font-style: normal;
+    font-weight: 200;
+    font-display: swap;
+    src: url("./1.0/uploads/source/fonts/WOFF2/soehne-extraleicht.woff2");
+}
+@font-face {
+    font-family: 'Soehne';
+    font-style: italic;
+    font-weight: 200;
+    font-display: swap;
+    src: url("./1.0/uploads/source/fonts/WOFF2/soehne-extraleicht-kursiv.woff2"); 
+}
+@font-face {
+    font-family: 'Soehne';
+    font-style: normal;
+    font-weight: 300;
+    font-display: swap;
+    src: url("./1.0/uploads/source/fonts/WOFF2/soehne-leicht.woff2");
+}
+@font-face {
+    font-family: 'Soehne';
+    font-style: italic;
+    font-weight: 300;
+    font-display: swap;
+    src: url("./1.0/uploads/source/fonts/WOFF2/soehne-leicht-kursiv.woff2");
+}
+@font-face {
+    font-family: 'Soehne';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url("./1.0/uploads/source/fonts/WOFF2/soehne-buch.woff2");
+}
+@font-face {
+    font-family: 'Soehne';
+    font-style: italic;
+    font-weight: 400;
+    font-display: swap;
+    src: url("./1.0/uploads/source/fonts/WOFF2/soehne-buch-kursiv.woff2");
+}
+@font-face {
+    font-family: 'Soehne';
+    font-style: normal;
+    font-weight: 500;
+    font-display: swap;
+    src: url("./1.0/uploads/source/fonts/WOFF2/soehne-kraftig.woff2");
+}
+@font-face {
+    font-family: 'Soehne';
+    font-style: italic;
+    font-weight: 500;
+    font-display: swap;
+    src: url("./1.0/uploads/source/fonts/WOFF2/soehne-kraftig-kursiv.woff2");
+}
+@font-face {
+    font-family: 'Soehne';
+    font-style: normal;
+    font-weight: 600;
+    font-display: swap;
+    src: url("./1.0/uploads/source/fonts/WOFF2/soehne-halbfett.woff2");
+}
+@font-face {
+    font-family: 'Soehne';
+    font-style: italic;
+    font-weight: 600;
+    font-display: swap;
+    src: url("./1.0/uploads/source/fonts/WOFF2/soehne-halbfett-kursiv.woff2");
+}
+@font-face {
+    font-family: 'Soehne';
+    font-style: normal;
+    font-weight: 700;
+    font-display: swap;
+    src: url("./1.0/uploads/source/fonts/WOFF2/soehne-dreiviertelfett.woff2");
+}
+@font-face {
+    font-family: 'Soehne';
+    font-style: italic;
+    font-weight: 700;
+    font-display: swap;
+    src: url("./1.0/uploads/source/fonts/WOFF2/soehne-dreiviertelfett-kursiv.woff2");
+}
+@font-face {
+    font-family: 'Soehne';
+    font-style: normal;
+    font-weight: 800;
+    font-display: swap;
+    src: url("./1.0/uploads/source/fonts/WOFF2/soehne-fett.woff2");
+}
+@font-face {
+    font-family: 'Soehne';
+    font-style: italic;
+    font-weight: 800;
+    font-display: swap;
+    src: url("./1.0/uploads/source/fonts/WOFF2/soehne-fett-kursiv.woff2");
+}
+@font-face {
+    font-family: 'Soehne';
+    font-style: normal;
+    font-weight: 900;
+    font-display: swap;
+    src: url("./1.0/uploads/source/fonts/WOFF2/soehne-extrafett.woff2");
+}
+@font-face {
+    font-family: 'Soehne';
+    font-style: italic;
+    font-weight: 900;
+    font-display: swap;
+    src: url("./1.0/uploads/source/fonts/WOFF2/soehne-extrafett-kursiv.woff2");
+}
+        body, html {
+    font-size: 15px !important;
+}
+        body {
+    background: #232426; 
+    font-family: 'Soehne', sans-serif;
+    margin: 0;
+}
+* {
+    /* font-family: Inter, sans-serif !important; */
+}
+        section {
+    height: auto;
+    min-height: auto;
+}p, h1, h2, h3, h4, h5, h6 {
+    padding: 0;
+    margin: 0;
+}
+#banner{
+    background: #FFFAF3;
+}
+#banner .section-content{
+    background: linear-gradient(0deg, #FC8159, #F2F5FF00);
+}
+
+#banner .section-content{
+    width: 100%;
+    /* height: 100vh; */
+    display: block;
+    justify-content: space-between;
+    align-items: center;
+    gap: 5vw;
+    /* padding: 7vw 10vw; */
+}
+#banner .section-content .info-container{
+    /* position: absolute; */
+    padding: 4vw;
+    text-align: center;
+}
+#banner .img-container{
+    text-align: center;
+}
+.info-container .pos-module {
+    width: 60px;
+}
+.info-container hr {
+    margin: 1vw auto;
+}.r-gradient-color {
+    background: -webkit-linear-gradient(0deg, #FC8A5B, #F75851, #F06C82);
+}hr {
+    height: .3vw;
+    width: 10vw;
+    margin: 0 0 2vw;
+    background: black;
+    border: none;
+    min-width: 200px;
+    min-height: 5px;
+}
+#banner-ring{
+    margin-bottom: 1.5vw;
+}
+#banner .info-container h2{
+    font-size: 3.5vw;
+    font-weight: 600;
+}
+#banner .info-container p{
+    width: 50vw;
+    font-size: .73vw;
+    font-weight: 200;
+    line-height: 2;
+    text-align: center;
+    margin: 0 auto;
+}
+
+#banner .info-container p{
+    font-size: .73vw;
+    font-weight: 200;
+    line-height: 2;
+    letter-spacing: 0.0625vw;
+}  
+ 
+ 
+                        @media (max-width:1440px) { 
+                            #banner .info-container p {
+                                font-size: .807vw;
+                                font-weight: 200;
+                                line-height: 1.8;
+                            }   
+                        } 
+
+#banner .info-container p {
+    font-size: 0.83vw;
+    font-weight: 300;
+    letter-spacing: 0.0625vw;
+    line-height: 1.5;
+    width: 85%;
+    width: 60vw;
+    margin: 0 auto;
+    margin-bottom: 1.5625vw;
+    
+}
+section {
+    height: auto;
+    min-height: auto;
+}
+.white-section {
+    background: #FFFAF3;
+    color: #232426;
+}
+#p_template,
+#m_brand,
+#smart-product {
+    padding: 7vw 10vw 0 10vw;
+}
+#m_product{
+    padding-top:10vw;
+}
+#m_brand,
+#smart-product,
+#p_template{
+    padding-bottom:10vw;
+}
+.section-content, 
+#p_template .section-content, 
+#m_brand .section-content,
+#smart-product .section-content{
+    width: 100%;
+    min-height: 100%;
+    min-height: auto;
+    display: flex;
+    justify-content: space-between;
+    justify-content: center;
+    align-items: center;
+    gap: 1%;
+}
+#p_template .img-container, 
+#m_brand .img-container, 
+#smart-product .img-container{
+    min-width: 30vw;
+}
+#p_template .info-container, 
+#m_brand .info-container, 
+#smart-product .info-container{
+    width: 28vw;
+    margin-left: 3vw;
+}
+#p_template .section-content{
+    display: block;
+    text-align: center;
+}
+#p_template .info-container{
+    width:100%;
+}
+#p_template .info-container hr{
+    margin: 1vw auto 2vw auto;
+}
+#p_template .info-container h2, 
+#m_brand .info-container h2 , 
+#smart-product .info-container h2 {
+    font-size: 1.5rem;
+    font-weight: 500;
+    line-height: 1.2; 
+}
+hr {
+    height: .3vw;
+    width: 10vw;
+    margin: 0 0 2vw;
+    background: black;
+    border: none;
+    min-width: 200px;
+    min-height: 5px;
+}
+.info-container hr {
+    margin: 1.5vw auto;
+}
+#p_template .info-container p,
+#m_brand .info-container p, 
+#smart-product .info-container p{
+    font-size: 1.06vw;
+    font-size: .9vw;
+    font-weight: 300;
+    line-height: 1.5;
+    width: 93%; 
+    text-align: justify;
+}
+
+.r-gradient-color {
+    background: -webkit-linear-gradient(0deg, #FC8A5B, #F75851, #F06C82);
+}
+.info-container a {
+    display: inline-block;
+    color: #fff;
+    font-size: .95vw;
+    font-weight: 300;
+    letter-spacing: 1.2;
+    text-decoration: none;
+    padding: .8vw 2.5vw .9vw;
+}
+
+#p_template .info-container h2 span, 
+#m_brand .info-container h2 span, 
+#smart-product .info-container h2 span{
+    font-size: 3.467rem;
+    font-weight: 600;
+}
+
+#p_template hr,
+#m_brand hr ,
+#smart-product hr{
+    margin:1vw 0 2vw 0;
+    width: 8vw;
+    min-width: 150px;
+} 
+.white-section {
+    background: #FFFAF3;
+    color: #232426;
+}   
+/* @media (min-width:1440px){
+    #banner .info-container h2{
+        font-size: 4rem;
+    }
+    #m_product .info-container, 
+    #m_brand .info-container,
+    #smart-product .info-container{
+        width: 35vw;
+    }
+    #banner .info-container p,
+    #m_product .info-container p, 
+    #m_brand .info-container p,
+    #smart-product .info-container p,
+    #specific .info-container p{
+        font-size: 1rem;
+        line-height: 1.5rem;
+    }
+    #specific .info-container p {
+        width: 64vw;
+        letter-spacing: 0.0625vw;
+}
+    #m_product .info-container h2 span, 
+    #smart-product .info-container h2 span, 
+    #m_brand .info-container h2 span {
+        font-size: 1.5rem;
+        font-weight: 600;
+    } 
+    #specific .info-container p{
+        width: 77.5vw;
+    }
+}
+@media (min-width:1024px) and (max-width:1440px){
+    #banner .info-container h2{
+        font-size:4rem;
+    }
+    #banner .info-container p,
+    #smart-product .info-container p,
+    #m_product .info-container p, 
+    #m_brand .info-container p,
+    #specific .info-container p{
+        font-size: 1rem;
+        line-height: 1.5rem;
+    }
+    #banner .info-container p{
+        width:86vw;
+    } 
+    #m_product, #m_brand {
+        padding: 7vw 5vw 0 5vw;
+    }
+    #m_product .info-container, 
+    #smart-product .info-container, 
+    #m_brand .info-container {
+        width: 49vw;
+    }
+    #m_product .info-container h2 span, 
+    #smart-product .info-container h2 span, 
+    #m_brand .info-container h2 span {
+        font-size: 1.6rem;
+    }
+    #m_product hr, 
+    #smart-product hr, 
+    #m_brand hr {
+        min-width: 110px;
+    }
+    #m_brand,
+    #smart-product{
+        padding: 7vw 5vw 19.5vw 5vw;
+    }
+    #specific .info-container p {
+        width: 94%;
+    }
+    #specific .section-content .info-container {
+        padding-top: 19.5vw;
+    }
+    #specific .info-container h2 span {
+        font-size: 3.25rem;
+    }
+    #specific .info-container h2{
+        font-size: 2.25rem;
+    }
+}
+
+@media (max-width:1024px){
+    #banner .info-container h2, #specific .info-container h2 {
+        font-size: 2.4rem;
+        line-height: 2.267rem;
+    }
+    #banner .info-container hr{
+        min-width: 8.8rem;
+        margin: 20px auto;
+    }
+    #banner .info-container p {
+        font-size: 1.067rem;
+        line-height: 1.6rem;
+        width: 100%;
+    }
+    #banner .section-content .info-container{
+        padding: 60px 4vw;
+    }
+    #banner img:not(.mobile){
+        display: none;
+    }
+    .section-content, 
+    #m_product .section-content, 
+    #smart-product .section-content, 
+    #m_brand .section-content{
+        display: block;
+    } 
+    #m_product, 
+    #smart-product, 
+    #m_brand {
+        padding: 37vw 4vw 0 4vw;
+    }
+    #m_brand{
+        padding: 37vw 4vw 37vw 4vw;
+    }
+    .img-container{
+        padding-top:10vw;
+    }
+    #smart-product .img-container img{
+        padding: 15vw 0;
+    }
+    #m_product .info-container h2 span, 
+    #smart-product .info-container h2 span, 
+    #m_brand .info-container h2 span {
+        font-size: 1.6rem;
+    }
+    #m_product .info-container, 
+    #smart-product .info-container, 
+    #m_brand .info-container {
+        width: 100%;
+    }
+    #m_product .info-container p, 
+    #smart-product .info-container p, 
+    #m_brand .info-container p {
+        font-size: 0.933rem;
+    }
+    #m_product .info-container:not(.mobile),
+    #smart-product .info-container:not(.mobile)
+    {
+        display:none;
+    }
+    #smart-product .info-container h2,
+    #smart-product .info-container hr{
+        display: none;
+    }
+    #smart-product .img-container .mobile{
+        text-align: center;
+    }
+    #smart-product .img-container .mobile hr{
+        margin: 3.5vw auto 2vw auto;
+        background: #FB7A58;
+        min-height: 2px;
+        min-width: 100%;
+        min-width: 82%;
+    }
+    #smart-product .img-container .mobile span{
+        color: #FB7A58;
+        font-size: 19px;
+        font-family: Arial;
+    } 
+    #specific .info-container h2{
+        font-size: 1.6rem;
+    }
+    #specific .info-container h2 span{
+        font-size: 2.4rem;
+    }
+    #specific .info-container p {
+        width: 100%;
+        font-size: 1.067rem;
+        line-height: 1.6rem;
+    }
+    #specific hr{
+        min-width:auto;
+        width: 7rem;
+        margin: 1.333rem auto 2rem auto;
+    }
+    #specific img {
+        width: 100%;
+    }
+}
+@media (min-width:1024px){
+    #m_product .mobile,
+    #smart-product .mobile,
+    #banner img.mobile{
+        display:none;
+    }
+} */
+
+    
+    </style>
+</head>
+<body>
+    <section id="banner">
+        <div class="section-content">
+            <div class="info-container">
+                <svg xmlns="http://www.w3.org/2000/svg" width="60" height="57" viewBox="0 0 60 57" fill="none">
+                    <g clip-path="url(#clip0_568_4618)">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M-0.000492383 11.7843V46.0707C-0.000492383 47.9572 1.48508 49.3998 3.33 49.3998H56.6369C58.6556 49.3998 59.9995 47.8506 59.9995 45.8473V12.0062C59.9995 10.2643 58.5592 8.66986 56.8589 8.66986H51.0685C50.585 8.66986 49.9116 9.69486 49.431 10.222L48.2756 11.52C48.0477 11.7726 47.9937 11.7215 47.9308 12.0252C49.637 12.0515 51.3636 12.031 53.0726 12.0296C53.9695 12.0281 54.5305 12.0456 55.1571 12.5216C55.6348 12.8838 56.0233 13.459 56.1139 14.173C56.1957 14.8184 56.1417 38.2343 56.1329 39.9864C56.1285 40.9267 56.0073 41.3677 55.4843 41.9517C55.0709 42.4131 54.4472 42.7358 53.6657 42.7358H6.0017C4.58186 42.7358 3.42495 41.6875 3.42495 40.2843V14.4578C3.42495 13.1086 4.57747 12.0544 5.92574 12.0281C7.57199 11.9975 9.25185 12.0296 10.9025 12.0296H33.2504C33.6682 12.0296 34.102 12.0427 34.5183 12.0354C35.1172 12.0252 35.0398 11.8704 35.2954 11.5288C35.7117 10.9725 35.9381 10.6658 36.3545 10.1314C36.5765 9.84671 37.2908 8.93706 37.396 8.67862C36.3179 8.57787 29.058 8.67132 27.311 8.67132C20.5551 8.67132 13.7991 8.67132 7.04174 8.67132C5.78551 8.67132 3.17662 8.49903 2.19208 8.86552C1.07023 9.28457 -0.00195312 10.3811 -0.00195312 11.7857L-0.000492383 11.7843Z" fill="#232426"/>
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M25.1934 28.2586C25.3219 28.5112 25.7441 28.8689 25.931 29.0426C26.473 29.5478 27.8417 31.0226 28.201 31.2547C28.2186 31.2445 28.2448 31.208 28.2522 31.2226C28.2595 31.2372 28.2916 31.1978 28.3018 31.189L35.1483 23.6256C35.3032 23.446 35.3996 23.3672 35.5807 23.1628C37.4095 21.085 39.4736 18.9605 41.3156 16.804C41.8283 16.2038 42.414 15.5716 42.9385 15.0095L51.9147 5.0544C52.1119 4.69083 52.0725 3.96369 51.9775 3.51544C51.7935 2.65397 51.2881 1.88157 50.6979 1.31943C49.5279 0.205357 47.5398 -0.599167 45.7986 0.576226C44.9908 1.12085 42.157 5.30992 41.3083 6.40355L38.3678 10.3721C38.1414 10.7036 37.8843 11.0161 37.6403 11.3519L31.0524 20.2688C30.0211 21.6282 29.0483 22.9832 28.1163 24.2389C27.7891 24.6798 25.2766 28.0133 25.1963 28.2571L25.1934 28.2586Z" fill="#232426"/>
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M24.2196 50.935C24.075 51.1394 20.6204 56.5214 20.5371 57.0003L39.0564 56.993C38.9425 56.6061 36.5089 52.9923 36.0838 52.3615L35.108 50.916L24.2211 50.9335L24.2196 50.935Z" fill="#232426"/>
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M15.7554 36.1986C16.2403 36.4891 19.0727 36.8527 19.8878 36.9243C22.5887 37.1608 25.6694 37.0046 26.9958 34.3953C27.1915 34.0113 27.5494 32.96 27.5216 32.4753C27.5056 32.1993 25.3773 30.2063 25.1465 29.977C24.5534 29.3901 24.5899 29.1375 23.4462 29.2119C20.3699 29.412 21.2054 32.4388 18.9296 34.5034C17.463 35.835 16.0125 35.9985 15.7539 36.2L15.7554 36.1986Z" fill="#232426"/>
+                    </g>
+                    <defs>
+                        <clipPath id="clip0_568_4618">
+                            <rect width="60" height="57" fill="white"/>
+                        </clipPath>
+                    </defs>
+                </svg>
+                     
+                <h2 tagname="h2">Jewelry Web Design Tools<br></h2>
+                <hr class="r-gradient-color">
+                <p tagname="p">Build provides powerful yet easy-to-use design tools tailored specifically for the jewelry industry. These tools enable you to create stunning product pages, custom layouts, and engaging visuals, helping you reflect your company image online and showcase your jewelry collection exactly the way you desire.</p> 
+                
+            </div>
+            <div class="img-container">
+                <!-- <img src="/1.0/uploads/source/product_magement/files/shutterstock_2361518699 1.png" alt="We Increased Traffic &amp; THE BOTTOM-LINE" loading="lazy" href=""> -->
+                <img src="./1.0/uploads/source/product_magement/files/Design tools 1.png" alt="We Increased Traffic &amp; THE BOTTOM-LINE" loading="lazy" href=""> 
+            </div>
+        </div>
+    </section>  
+    <section id="m_brand" class="white-section">
+        <div class="section-content">
+            <div class="info-container">
+                <h2 tagname="h2">Introducing <br><span tagname="span">Design Studio</span></h2>
+                <hr>
+                <p tagname="p">Design Studio is an ideal tool for jewelers to create stunning static and form pages with ease. Using pre-built row templates, you can showcase your collections and customize layouts to match your brand. For advanced users, CSS/HTML offers full creative control, helping you design professional, beautiful pages effortlessly.</p> 
+            </div>
+            <div class="img-container">
+                <img src="./1.0/uploads/source/web_design_tools/files/customizable website builder 3.png" alt="We Increased Traffic &amp; THE BOTTOM-LINE" loading="lazy" href="">
+            </div>
+        </div>
+    </section> 
+    <section id="p_template" class="white-section">
+        <div class="section-content">
+            <div class="img-container">
+                <img src="./1.0/uploads/source/web_design_tools/files/Group 1103.png" alt="We Increased Traffic &amp; THE BOTTOM-LINE" loading="lazy" href="">
+            </div>
+            <div class="info-container">
+                <h2 tagname="h2"><span tagname="span">Page Templates</span></h2>
+                <hr>
+                <p tagname="p">Choose a template, name your page, and start building a beautiful page in just a few clicks.
+                    Build’s Design Studio offers an all-in-one solution for creating stunning jewelry websites. With a library of templates like About Us, RSVP, and jewelry-specific landing pages, it simplifies the design process using a drag-and-drop interface.</p> 
+            </div>
+            
+        </div>
+    </section> 
+    <section id="smart-product" class="white-section">
+        <div class="section-content">
+            <div class="img-container"> 
+                <img src="./1.0/uploads/source/web_design_tools/files/Group 1106.png" alt="We Increased Traffic &amp; THE BOTTOM-LINE" loading="lazy" href="">
+            </div> 
+            <div class="info-container">
+                <h2 tagname="h2">Custom  <br><span tagname="span">Templates</span></h2>
+                <hr>
+                <p tagname="p">Use Build's Layout Builder to easily customize your website’s:
+                    <br>• Header
+                    <br>• Footer
+                    <br>• Product Pages
+                    <br>• Filter Pages
+                    <br>• Blogs
+                    <br>• And more...
+                    <br>
+                    With a wide range of customization options, you can create a website that truly stands out and provides a seamless experience for your customers.
+                    </p> 
+            </div>
+        </div>
+    </section> 
+</body>
+</html>
