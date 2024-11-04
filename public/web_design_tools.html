@@ -159,14 +159,16 @@
 #banner .img-container{
     text-align: center;
 }
-.info-container .pos-module {
-    width: 60px;
-}
+#banner .img-container img{
+    /* height: 50vh; */
+} 
 .info-container hr {
     margin: 1vw auto;
 }.r-gradient-color {
+    background:linear-gradient(0deg, #FC8A5B, #F75851, #F06C82);
     background: -webkit-linear-gradient(0deg, #FC8A5B, #F75851, #F06C82);
-}hr {
+}
+hr {
     height: .3vw;
     width: 10vw;
     margin: 0 0 2vw;
@@ -228,16 +230,23 @@ section {
 }
 #p_template,
 #m_brand,
-#smart-product {
+#smart-product,
+#flyer {
     padding: 7vw 10vw 0 10vw;
 }
+#flyer{
+    padding: 7vw 20vw 15.7vw 20vw;
+    padding: 7vw 15vw 15.7vw 15vw;
+}
+
 #m_product{
     padding-top:10vw;
 }
 #m_brand,
 #smart-product,
 #p_template{
-    padding-bottom:10vw;
+    /* padding-bottom:10vw; */
+    padding-top: 16vw;
 }
 .section-content, 
 #p_template .section-content, 
@@ -271,14 +280,18 @@ section {
     width:100%;
 }
 #p_template .info-container hr{
-    margin: 1vw auto 2vw auto;
+    margin: 1vw auto 1.6vw auto;
+}
+#p_template .img-container{
+    min-width: 30vw;
+    padding-top: 4.7vw;
 }
 #p_template .info-container h2, 
 #m_brand .info-container h2 , 
 #smart-product .info-container h2 {
-    font-size: 1.5rem;
+    font-size: 2.4rem;
     font-weight: 500;
-    line-height: 1.2; 
+    line-height: 3.467rem;
 }
 hr {
     height: .3vw;
@@ -322,22 +335,91 @@ hr {
     font-size: 3.467rem;
     font-weight: 600;
 }
+#smart-product .info-container h2 span{
+    text-transform: uppercase;
+}
 
 #p_template hr,
 #m_brand hr ,
 #smart-product hr{
     margin:1vw 0 2vw 0;
-    width: 8vw;
-    min-width: 150px;
+    width: 10vw;
+    min-width: auto;
 } 
 .white-section {
     background: #FFFAF3;
     color: #232426;
+}
+#p_template .info-container p{
+    width: 59%;
+    margin: auto;
+    text-align: center;
 }   
-/* @media (min-width:1440px){
+#p_template .info-container{
+    margin:0;
+}
+#flyer {
+    display: flex;
+    justify-content: space-between;
+}
+#flyer .section-content {
+    display: block;
+    width: 19vw;
+    width: 22vw;
+    background: #232426;
+    color: #fff;
+    padding: 2vw;
+    padding-bottom: 0;
+    box-sizing: border-box;
+}
+#flyer .section-content p{
+    font-weight: 300;
+    font-size: 0.933rem;
+    line-height: 1.4rem;
+    text-align:justify;
+}
+#flyer .section-content .info-container h2{
+    line-height:1.6rem;
+}
+#flyer .section-content .info-container h2 span{
+    font-size: 1.6rem;
+    font-weight: 400;
+}
+#flyer .section-content .info-container hr {
+    margin: 1.333rem 0 2rem 0;
+    background: #fff;
+    min-width: auto;
+    width: 7vw;
+    height: 0.333rem;
+}
+#flyer .section-content .img-container{
+
+}
+#flyer .section-content:nth-child(1) .img-container{
+    margin-top: 3.333rem;
+}
+#flyer .section-content:nth-child(2) .img-container{
+    margin-top: 6.133rem;
+}
+#flyer .section-content:nth-child(3) .img-container{
+    margin-top: 4.733rem;
+}
+
+#flyer .section-content .img-container img {
+    width: 100%;
+}
+
+@media (min-width:1440px){
     #banner .info-container h2{
-        font-size: 4rem;
+        font-size: 4.25rem;
     }
+    #banner .info-container p {
+        width: 72vw;
+    }
+    #m_brand .img-container img{
+        width:100%;
+    }
+
     #m_product .info-container, 
     #m_brand .info-container,
     #smart-product .info-container{
@@ -365,6 +447,7 @@ hr {
         width: 77.5vw;
     }
 }
+
 @media (min-width:1024px) and (max-width:1440px){
     #banner .info-container h2{
         font-size:4rem;
@@ -377,8 +460,16 @@ hr {
         font-size: 1rem;
         line-height: 1.5rem;
     }
-    #banner .info-container p{
-        width:86vw;
+    #banner .info-container p {
+        width: 88vw;
+    }
+    #m_brand .img-container{
+        width: 57vw;
+    }
+    #m_brand .img-container img,
+    #smart-product .img-container img,
+    #p_template .img-container img{
+        width:100%;
     } 
     #m_product, #m_brand {
         padding: 7vw 5vw 0 5vw;
@@ -399,8 +490,17 @@ hr {
         min-width: 110px;
     }
     #m_brand,
-    #smart-product{
-        padding: 7vw 5vw 19.5vw 5vw;
+    #smart-product,
+    #p_template,
+    #flyer{
+        padding: 20vw 5vw 0 5vw;
+    }
+    /* {
+        padding: 20vw 5vw 0 5vw;
+    } */
+    #p_template .info-container p {
+        font-size: 1.067rem;
+        width: 90%;
     }
     #specific .info-container p {
         width: 94%;
@@ -414,8 +514,26 @@ hr {
     #specific .info-container h2{
         font-size: 2.25rem;
     }
+    #flyer .section-content {
+        width: 26vw;
+    }
+    #flyer {
+        padding: 20vw 8vw 20vw 8vw;
+    }
+    #flyer .section-content:nth-child(3) .img-container {
+        margin-top: 2.333rem;
+    }
+    #flyer .section-content:nth-child(2) .img-container {
+        margin-top: 5.133rem;
+    }
+    #flyer .section-content:nth-child(1) .img-container {
+        margin-top: 2.333rem;
+    }
+    #flyer .section-content .info-container hr {
+        width: 11vw;
+    }
 }
-
+/*
 @media (max-width:1024px){
     #banner .info-container h2, #specific .info-container h2 {
         font-size: 2.4rem;
@@ -569,16 +687,15 @@ hr {
     </section> 
     <section id="p_template" class="white-section">
         <div class="section-content">
-            <div class="img-container">
-                <img src="./1.0/uploads/source/web_design_tools/files/Group 1103.png" alt="We Increased Traffic &amp; THE BOTTOM-LINE" loading="lazy" href="">
-            </div>
             <div class="info-container">
                 <h2 tagname="h2"><span tagname="span">Page Templates</span></h2>
                 <hr>
                 <p tagname="p">Choose a template, name your page, and start building a beautiful page in just a few clicks.
                     Build’s Design Studio offers an all-in-one solution for creating stunning jewelry websites. With a library of templates like About Us, RSVP, and jewelry-specific landing pages, it simplifies the design process using a drag-and-drop interface.</p> 
             </div>
-            
+            <div class="img-container">
+                <img src="./1.0/uploads/source/web_design_tools/files/Group 1103.png" alt="We Increased Traffic &amp; THE BOTTOM-LINE" loading="lazy" href="">
+            </div>
         </div>
     </section> 
     <section id="smart-product" class="white-section">
@@ -598,7 +715,39 @@ hr {
                     <br>• And more...
                     <br>
                     With a wide range of customization options, you can create a website that truly stands out and provides a seamless experience for your customers.
-                    </p> 
+                </p> 
+            </div>
+        </div>
+    </section>
+    <section id="flyer" class="white-section">
+        <div class="section-content">
+            <div class="info-container">
+                <h2 tagname="h2"><span tagname="span">Jewelry Products <br> Page Builder</span></h2>
+                <hr>
+                <p tagname="p">Build’s Jewelry Products Page Builder is a powerful tool designed specifically for jewelers, providing a seamless experience right from the start. The default settings present a visually appealing layout, highlighting product images, specifications, and essential details in an elegant, user-friendly format. Whether you’re showcasing diamonds, rings, or other jewelry, this tool ensures a professional display without extensive setup. Additionally, it offers complete customization, allowing you to tailor each page to your brand's unique style. Whether you need subtle tweaks or a full redesign, Build’s product page builder is versatile and robust, making it easy to elevate your online jewelry store.</p> 
+            </div>
+            <div class="img-container">
+                <img src="./1.0/uploads/source/web_design_tools/files/Group 1103.png" alt="We Increased Traffic &amp; THE BOTTOM-LINE" loading="lazy" href="">
+            </div>
+        </div>
+        <div class="section-content">
+            <div class="info-container">
+                <h2 tagname="h2"><span tagname="span">Diamond Search <br> Page Builder</span></h2>
+                <hr>
+                <p tagname="p">Build's Diamond Search Page Builder is an essential tool for your jewelry website. This page builder allows you to easily set up a search page for diamonds based on a vast range of criteria. With integrations via diamond sources such as Rapnet and VDB, you can automatically populate images for the diamonds you are selling. You can even add placeholder images for those diamonds where real images from the vendor are not available. Customers visiting the site will have easy access to beautiful images of all diamonds. This is a must-have module for any jewelers selling diamonds, who are also interested in creating a top-notch website.</p> 
+            </div>
+            <div class="img-container">
+                <img src="./1.0/uploads/source/web_design_tools/files/Group 1103.png" alt="We Increased Traffic &amp; THE BOTTOM-LINE" loading="lazy" href="">
+            </div>
+        </div>
+        <div class="section-content">
+            <div class="info-container">
+                <h2 tagname="h2"><span tagname="span">Jewelry Blogs <br> Page Builder</span></h2>
+                <hr>
+                <p tagname="p">Build’s Jewelry Blogs Page Builder offers an easy way for jewelers to incorporate content marketing into their business strategy. With its intuitive, user-friendly interface, creating professional blog posts becomes effortless. Whether sharing industry insights, tips, or promoting new collections, this flexible tool helps jewelers produce high-quality blogs quickly. Build’s customization options allow you to design blogs that align with your brand and aesthetic, giving your online presence a polished, engaging edge. By regularly posting content, you not only enhance customer engagement but also improve SEO, making this blog builder an invaluable asset for digital marketing efforts.</p> 
+            </div>
+            <div class="img-container">
+                <img src="./1.0/uploads/source/web_design_tools/files/Group 1103.png" alt="We Increased Traffic &amp; THE BOTTOM-LINE" loading="lazy" href="">
             </div>
         </div>
     </section> 
